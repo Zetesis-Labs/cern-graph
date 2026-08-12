@@ -1,12 +1,14 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
   pageTitle: CERN IT Governance
-  pageTitleSuffix: " · Grafo OKF"
+  pageTitleSuffix: " · OKF Graph"
   enableSPA: true
   enablePopovers: true
   analytics: null
-  locale: es-ES
-  baseUrl: cern-it-governance.example.com
+  locale: en-US
+  # Dominio del despliegue en Cloudflare Pages: de él dependen los enlaces
+  # absolutos, el sitemap y el RSS. Cámbialo si se pone un dominio propio.
+  baseUrl: cern-it-governance-graph.pages.dev
   ignorePatterns:
     - private
     - templates

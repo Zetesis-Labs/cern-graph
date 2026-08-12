@@ -1,10 +1,10 @@
 name: Deploy a Cloudflare Pages
 
-# Publica el grafo de gobernanza de TI del CERN. Build del sitio con el toolkit
-# quartz-okf + `wrangler pages deploy`.
+# Publishes the CERN IT governance graph. Site build with the quartz-okf
+# toolkit + `wrangler pages deploy`.
 #
-# Requiere en este repositorio los secrets CLOUDFLARE_API_TOKEN y CLOUDFLARE_ACCOUNT_ID.
-# El sitio es público: no lleva Basic Auth, así que cualquiera con la URL lo lee.
+# Requires the CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID secrets in this repository.
+# The site is public: no Basic Auth, so anyone with the URL can read it.
 
 on:
   push:

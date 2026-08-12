@@ -1,33 +1,36 @@
 ---
-title: "Gobernanza de TI y Arquitectura de Identidad (CERN)"
+title: "IT Governance and Identity Architecture (CERN)"
 type: portal
-description: "Grafo de conocimiento estructurado sobre la gobernanza tecnológica, ciberseguridad e identidad en el CERN."
+description: "Structured knowledge graph on technology governance, cybersecurity, and identity at CERN."
 ---
 
-# Gobernanza de TI y Arquitectura de Identidad en el CERN
+# IT Governance and Identity Architecture at CERN
 
-Bienvenido al grafo de conocimiento sobre la arquitectura de Tecnologías de la Información de la **Organización Europea para la Investigación Nuclear (CERN)**.
+Welcome to the knowledge graph on the Information Technology architecture of the **European Organization for Nuclear Research (CERN)**.
 
-Esta base de conocimiento desglosa cómo una institución intergubernamental gestiona la gobernanza directiva, la transición a arquitecturas de **Identidad y Acceso (Keycloak / OpenID Connect)**, los marcos de **ciberseguridad (CIS v8 / Zero Trust)** y la federación distribuida del **Worldwide LHC Computing Grid (WLCG IAM)**.
+This knowledge base breaks down how an intergovernmental institution manages executive governance, the transition to **Identity and Access architectures (Keycloak / OpenID Connect)**, **cybersecurity frameworks (CIS v8 / Zero Trust)**, and the distributed federation of the **Worldwide LHC Computing Grid (WLCG IAM)**.
+
+> [!tip] Explore it as a graph
+> Every note declares typed relationships. Open the **[interactive graph](/static/explorer)** to navigate them: seven node types and seven relationship kinds, filterable by view — full, identity and access, or governance and security.
 
 ---
 
-## 🗺️ Mapa de Dominio
+## 🗺️ Domain Map
 
-### 🏛️ Gobierno Corporativo y Directiva
-* [[consejo-cern]]: El órgano supremo de gobierno, el comité de auditoría (SACA) y comités evaluadores.
-* [[reestructuracion-2026]]: La reestructuración directiva 2026-2030 y la institucionalización de la figura del **CIO**.
-* [[estrategia-it]]: Los 4 pilares operativos del Departamento de TI (*Provider, Optimiser, Pioneer, Connector*).
+### 🏛️ Corporate Governance and Executive Leadership
+* [[consejo-cern]]: The supreme governing body, the audit committee (SACA), and evaluation committees.
+* [[reestructuracion-2026]]: The 2026-2030 executive restructuring and the institutionalization of the **CIO** role.
+* [[estrategia-it]]: The 4 operational pillars of the IT Department (*Provider, Optimiser, Pioneer, Connector*).
 
-### 🔑 Identidad, Autenticación y Autorización (IAA)
-* [[cern-sso-keycloak]]: La migración del SSO tradicional desde ADFS hacia **Keycloak** on-premise en Kubernetes.
-* [[oidc-jwt-cern]]: Protocolo **OpenID Connect (OIDC)** y especificación de claims en tokens JWT (`cern_upn`, `resource_access`).
-* [[gms-authorization-api]]: El desacoplamiento de autorización con **Group Management System (GMS)** y **Authorization Service API**.
+### 🔑 Identity, Authentication and Authorization (IAA)
+* [[cern-sso-keycloak]]: The migration of traditional SSO from ADFS to **Keycloak** on-premises on Kubernetes.
+* [[oidc-jwt-cern]]: **OpenID Connect (OIDC)** protocol and claims specification in JWT tokens (`cern_upn`, `resource_access`).
+* [[gms-authorization-api]]: The decoupling of authorization with **Group Management System (GMS)** and **Authorization Service API**.
 
-### 🛡️ Ciberseguridad y Normativa
-* [[oc5-constitucion-digital]]: La **Circular Operativa No. 5 (OC5)** y el **Computer Security Officer (CSO)**.
-* [[cis-v8-zero-trust]]: Auditoría **CIS v8**, modelo **Zero Trust**, canalizaciones SAST/DAST, SBOM y WAF.
+### 🛡️ Cybersecurity and Regulations
+* [[oc5-constitucion-digital]]: **Operational Circular No. 5 (OC5)** and the **Computer Security Officer (CSO)**.
+* [[cis-v8-zero-trust]]: **CIS v8** audit, **Zero Trust** model, SAST/DAST pipelines, SBOM, and WAF.
 
-### 🌐 Computación Distribuida y Ciencia Abierta
-* [[wlcg-iam-oauth2]]: Servicio **WLCG IAM**, autorización basada en capacidades (*scopes*) y tokens JWT de vida corta.
-* [[inveniordm-zenodo]]: Política de Ciencia Abierta, la plataforma **InvenioRDM** y el repositorio global **Zenodo**.
+### 🌐 Distributed Computing and Open Science
+* [[wlcg-iam-oauth2]]: **WLCG IAM** service, capability-based authorization (*scopes*), and short-lived JWT tokens.
+* [[inveniordm-zenodo]]: Open Science policy, the **InvenioRDM** platform, and the global **Zenodo** repository.

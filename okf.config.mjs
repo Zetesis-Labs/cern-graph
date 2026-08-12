@@ -1,48 +1,48 @@
-// Configuración OKF para la plantilla de ejemplo CERN IT Governance
-// Este fichero define el vocabulario del dominio (nodos, colores, relaciones y modos de exploración).
+// OKF configuration for the CERN IT Governance sample template
+// This file defines the domain vocabulary (nodes, colors, relationships and exploration modes).
 
 export const branding = {
   site: "CERN IT Governance & Identity",
-  bundleTitle: "Grafo de Gobernanza de TI y Arquitectura de Identidad del CERN",
+  bundleTitle: "CERN IT Governance and Identity Architecture Graph",
   indexTitle: "CERN IT Governance · Knowledge Graph",
 }
 
 export const profile = {
   types: [
-    "comite",      // Órganos de gobierno supremo, auditoría y finanzas
-    "direccion",   // Direcciones sectoriales y roles ejecutivos (CIO)
-    "servicio",    // Servicios informáticos e infraestructuras operativas (Keycloak, GMS, WLCG IAM)
-    "protocolo",   // Protocolos y especificaciones técnicas (OIDC, SAML, JWT, OAuth2)
-    "politica",    // Circulares operativas y normativas institucionales (OC5, Open Science)
-    "estandar",    // Marcos de auditoría, seguridad y modelos (CIS v8, Zero Trust)
-    "plataforma",  // Repositorios de datos y publicaciones (InvenioRDM, Zenodo)
+    "committee",   // Supreme governing, audit and finance bodies
+    "directorate", // Sectoral directorates and executive roles (CIO)
+    "service",     // IT services and operational infrastructures (Keycloak, GMS, WLCG IAM)
+    "protocol",    // Technical protocols and specifications (OIDC, SAML, JWT, OAuth2)
+    "policy",      // Operational circulars and institutional regulations (OC5, Open Science)
+    "standard",    // Audit, security and model frameworks (CIS v8, Zero Trust)
+    "platform",    // Data and publication repositories (InvenioRDM, Zenodo)
   ],
   edgeLabels: [
-    "Gobierna",    // Relación directiva o de supervisión
-    "Ejecuta",     // Implementación operativa
-    "Autentica",   // Validación de identidad
-    "Autoriza",    // Control de accesos / roles / capacidades
-    "Cumple",      // Adhesión a norma o política
-    "Integra",     // Acoplamiento de software o infraestructura
-    "Publica",     // Difusión de datos o código
+    "Governs",       // Governing or supervisory relationship
+    "Runs",          // Operational implementation
+    "Authenticates", // Identity validation
+    "Authorizes",    // Access control / roles / capabilities
+    "Complies with", // Adherence to a standard or policy
+    "Integrates",    // Software or infrastructure coupling
+    "Publishes",     // Data or code dissemination
   ],
   inverseLabels: {
-    "Gobierna": "Supervisado por",
-    "Ejecuta": "Ejecutado por",
-    "Autentica": "Autenticado por",
-    "Autoriza": "Autorizado por",
-    "Cumple": "Aplica a",
-    "Integra": "Integrado en",
-    "Publica": "Publicado por",
+    "Governs": "Supervised by",
+    "Runs": "Run by",
+    "Authenticates": "Authenticated by",
+    "Authorizes": "Authorized by",
+    "Complies with": "Applies to",
+    "Integrates": "Integrated into",
+    "Publishes": "Published by",
   },
   propertyGroups: [
     {
       id: "ambito",
-      label: "Ámbito Operativo",
+      label: "Operational Scope",
       rule: "ambito-valido",
-      appliesTo: ["comite", "direccion", "servicio", "protocolo", "politica", "estandar", "plataforma"],
+      appliesTo: ["committee", "directorate", "service", "protocol", "policy", "standard", "platform"],
       fields: [
-        { source: "entorno", graphPath: ["entorno"], type: "string", enum: ["corporativo", "cientifico-grid", "transversal"] },
+        { source: "entorno", graphPath: ["entorno"], type: "string", enum: ["corporate", "scientific-grid", "cross-cutting"] },
       ],
     },
   ],
@@ -50,73 +50,73 @@ export const profile = {
 }
 
 export const explorer = {
-  title: "Grafo de Gobernanza de TI & Identidad (CERN)",
+  title: "IT Governance & Identity Graph (CERN)",
   backTo: { href: "/", label: "portal" },
-  knowledgeTypes: ["comite", "direccion", "servicio", "protocolo", "politica", "estandar", "plataforma"],
+  knowledgeTypes: ["committee", "directorate", "service", "protocol", "policy", "standard", "platform"],
   typeColors: {
-    comite: "#3b82f6",     // Azul cian
-    direccion: "#a855f7",  // Púrpura
-    servicio: "#10b981",   // Verde esmeralda
-    protocolo: "#f97316",  // Naranja
-    politica: "#ef4444",   // Rojo
-    estandar: "#eab308",   // Amarillo oro
-    plataforma: "#14b8a6", // Teal
+    committee: "#3b82f6",   // Cyan blue
+    directorate: "#a855f7", // Purple
+    service: "#10b981",     // Emerald green
+    protocol: "#f97316",    // Orange
+    policy: "#ef4444",      // Red
+    standard: "#eab308",    // Gold yellow
+    platform: "#14b8a6",    // Teal
   },
   typeLabels: {
-    comite: "Comité de Gobierno",
-    direccion: "Dirección / Ejecutivo",
-    servicio: "Servicio / Sistema",
-    protocolo: "Protocolo / Especificación",
-    politica: "Política / Circular",
-    estandar: "Estándar / Marco",
-    plataforma: "Plataforma de Datos",
+    committee: "Governing Committee",
+    directorate: "Directorate / Executive",
+    service: "Service / System",
+    protocol: "Protocol / Specification",
+    policy: "Policy / Circular",
+    standard: "Standard / Framework",
+    platform: "Data Platform",
   },
-  typeOrder: ["comite", "direccion", "servicio", "protocolo", "politica", "estandar", "plataforma"],
+  typeOrder: ["committee", "directorate", "service", "protocol", "policy", "standard", "platform"],
   tooltip: {
-    servicio: "{indeg|integración|integraciones}",
-    protocolo: "{indeg|servicio que lo usa|servicios que lo usan}",
-    "*": "{indeg|conexión entrante|conexiones entrantes}",
+    service: "{indeg|integration|integrations}",
+    protocol: "{indeg|service using it|services using it}",
+    "*": "{indeg|incoming connection|incoming connections}",
   },
   layout: {
     charge: -40,
     gravity: 0.02,
     link: {
       "*": { distance: 35, strength: 0.15 },
-      Gobierna: { distance: 45, strength: 0.2 },
-      Autentica: { distance: 30, strength: 0.25 },
+      Governs: { distance: 45, strength: 0.2 },
+      Authenticates: { distance: 30, strength: 0.25 },
     },
     radial: {
       strength: 0.85,
       byType: {
-        comite: 0,
-        direccion: 0.2,
-        servicio: 0.5,
-        protocolo: 0.7,
-        politica: 0.4,
-        estandar: 0.6,
-        plataforma: 0.85,
+        committee: 0,
+        directorate: 0.2,
+        service: 0.5,
+        protocol: 0.7,
+        policy: 0.4,
+        standard: 0.6,
+        platform: 0.85,
       },
     },
   },
   modes: [
     {
       id: "full",
-      label: "Vista completa",
-      desc: "<b>Grafo global de arquitectura de TI en el CERN.</b> Muestra la interacción completa entre comités de gobierno, direcciones sectoriales, infraestructura de identidad, seguridad y la red WLCG IAM.",
+      label: "Full view",
+      desc: "<b>Global IT architecture graph at CERN.</b> Shows the full interaction between governing committees, sectoral directorates, identity infrastructure, security and the WLCG IAM network.",
       edges: "*",
     },
     {
-      id: "identidad",
-      label: "Identidad & Accesos (SSO / OIDC)",
-      desc: "<b>Infraestructura de Autenticación y Autorización (IAA).</b> Filtra el grafo para mostrar únicamente la topología de Keycloak, OIDC, GMS y WLCG IAM.",
-      edges: ["Autentica", "Autoriza", "Integra"],
+      id: "identity",
+      label: "Identity & Access (SSO / OIDC)",
+      desc: "<b>Authentication and Authorization Infrastructure (AAI).</b> Filters the graph to show only the Keycloak, OIDC, GMS and WLCG IAM topology.",
+      edges: ["Authenticates", "Authorizes", "Integrates"],
       sizeBy: { indegree: true },
     },
     {
-      id: "gobernanza-seguridad",
-      label: "Gobernanza & Ciberseguridad",
-      desc: "<b>Plano de control ejecutivo y normativo.</b> Muestra cómo los comités, el CIO y la circular OC5 supervisan los estándares CIS v8 y Zero Trust.",
-      edges: ["Gobierna", "Ejecuta", "Cumple"],
+      id: "governance-security",
+      label: "Governance & Cybersecurity",
+      desc: "<b>Executive and regulatory control plane.</b> Shows how committees, the CIO and the OC5 circular oversee the CIS v8 and Zero Trust standards.",
+      edges: ["Governs", "Runs", "Complies with"],
       sizeBy: { indegree: true },
     },
   ],

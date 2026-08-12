@@ -51,36 +51,6 @@ cp -R "$TOOLKIT/plugins/quartz-okf" "$CACHE/quartz-okf"
 cp -R "$TOOLKIT/plugins/quartz-okf-explorer" "$CACHE/quartz-okf-explorer"
 cp -R "$TOOLKIT/plugins/quartz-okf-panels" "$CACHE/quartz-okf-panels"
 
-# El plugin de paneles trae sus textos en inglés e ignora el locale de Quartz: se
-# traduce el cromo —no el vocabulario de relaciones, que es lógica— en la copia
-# ensamblada. El toolkit está clavado por SHA, así que las cadenas son estables.
-python3 - "$CACHE" <<'PYEOF'
-import pathlib, sys
-repl = {
-    "<h3>Blast radius</h3>": "<h3>Radio de impacto</h3>",
-    "<h3>Properties</h3>": "<h3>Propiedades</h3>",
-    'section("Relations"': 'section("Relaciones"',
-    'section("Referenced by"': 'section("Referenciado por"',
-    'section("Related knowledge"': 'section("Conocimiento relacionado"',
-    '"Properties"': '"Propiedades"',
-}
-n = 0
-for d in ("quartz-okf-panels", "quartz-okf", "quartz-okf-explorer"):
-    p = pathlib.Path(sys.argv[1]) / d
-    if not p.exists():
-        continue
-    for f in p.rglob("*"):
-        if f.suffix not in (".ts", ".tsx"):
-            continue
-        t = o = f.read_text(encoding="utf-8")
-        for a, bb in repl.items():
-            t = t.replace(a, bb)
-        if t != o:
-            f.write_text(t, encoding="utf-8")
-            n += 1
-print(f"[okf-i18n] cromo de paneles traducido en {n} fichero(s)")
-PYEOF
-
 # 4. Copiar corpus (content) y estilos
 rm -rf "$CACHE/content"
 cp -R "$REPO_ROOT/content" "$CACHE/content"
