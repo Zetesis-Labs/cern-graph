@@ -1,14 +1,14 @@
 ---
 title: "LHCOPN — LHC Optical Private Network"
 type: source
-url: "https://twiki.cern.ch/twiki/bin/view/LHCOPN/"
+url: "https://lhcopn.web.cern.ch/"
 kind: technical-docs
 description: "The dedicated optical network linking CERN to the Tier-1 centres."
 ---
 
 # LHCOPN — LHC Optical Private Network
 
-The LHCOPN/LHCONE working area.
+The LHCOPN/LHCONE project site. (The working area also lives on the CERN TWiki, which is slower and intermittently unreachable.)
 
 ## What it anchors
 
