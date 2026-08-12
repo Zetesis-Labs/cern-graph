@@ -16,6 +16,10 @@ export const profile = {
     "policy",      // Operational circulars and institutional regulations (OC5, Open Science)
     "standard",    // Audit, security and model frameworks (CIS v8, Zero Trust)
     "platform",    // Data and publication repositories (InvenioRDM, Zenodo)
+    "concept",     // One architectural idea, atomically stated (zettel)
+    "decision",    // One choice with its rationale, atomically stated (zettel)
+    "topic",       // Structure note: the hub that maps one domain area
+    "source",      // Primary source on the public internet: every claim in the corpus cites one
   ],
   edgeLabels: [
     "Governs",       // Governing or supervisory relationship
@@ -25,7 +29,15 @@ export const profile = {
     "Complies with", // Adherence to a standard or policy
     "Integrates",    // Software or infrastructure coupling
     "Publishes",     // Data or code dissemination
+    "Part of",       // Belongs to a topic hub or a larger unit
+    "Contains",      // Mirror of Part of
+    "Depends on",    // Presupposes another note's idea
+    "About",         // Knowledge relation: this note is about that system
+    "Cites",         // Grounding: note → primary source that anchors its claims
   ],
+  // Domain relations are mirrored so both panels read naturally. Following the
+  // Typed Topology base profile, "Depends on", "About" and "Cites" have no
+  // mirror: they surface on the target through inbound-edge views instead.
   inverseLabels: {
     "Governs": "Supervised by",
     "Runs": "Run by",
@@ -34,15 +46,30 @@ export const profile = {
     "Complies with": "Applies to",
     "Integrates": "Integrated into",
     "Publishes": "Published by",
+    "Part of": "Contains",
+    "Contains": "Part of",
   },
   propertyGroups: [
     {
       id: "ambito",
       label: "Operational Scope",
       rule: "ambito-valido",
-      appliesTo: ["committee", "directorate", "service", "protocol", "policy", "standard", "platform"],
+      appliesTo: ["committee", "directorate", "service", "protocol", "policy", "standard", "platform", "concept", "decision", "topic"],
       fields: [
         { source: "entorno", graphPath: ["entorno"], type: "string", enum: ["corporate", "scientific-grid", "cross-cutting"] },
+      ],
+    },
+    // Provenance of a source note: the URL is the identity of the source, and the
+    // kind separates what the institution decrees from what its teams document.
+    {
+      id: "provenance",
+      label: "Provenance",
+      rule: "provenance-valid",
+      appliesTo: ["source"],
+      fields: [
+        { source: "url", graphPath: ["url"], type: "string" },
+        { source: "kind", graphPath: ["kind"], type: "string",
+          enum: ["governance-document", "official-announcement", "technical-docs", "standard-spec", "peer-reviewed-paper", "policy-document"] },
       ],
     },
   ],
@@ -56,13 +83,17 @@ export const explorer = {
   // Governing bodies and the norms themselves keep their type color in those views.
   knowledgeTypes: ["service", "platform"],
   typeColors: {
-    committee: "#3b82f6",   // Cyan blue
+    committee: "#3b82f6",   // Blue
     directorate: "#a855f7", // Purple
     service: "#10b981",     // Emerald green
     protocol: "#f97316",    // Orange
     policy: "#ef4444",      // Red
     standard: "#eab308",    // Gold yellow
     platform: "#14b8a6",    // Teal
+    concept: "#6366f1",     // Indigo — one idea per node
+    decision: "#ec4899",    // Pink — one choice with its rationale
+    topic: "#b58b6a",       // Brown — the structure notes that map each area
+    source: "#8a8a8a",      // Gray — the substrate, like books in a reading corpus
   },
   typeLabels: {
     committee: "Governing Committee",
@@ -72,8 +103,12 @@ export const explorer = {
     policy: "Policy / Circular",
     standard: "Standard / Framework",
     platform: "Data Platform",
+    concept: "Concept",
+    decision: "Decision",
+    topic: "Topic hub",
+    source: "Primary source",
   },
-  typeOrder: ["committee", "directorate", "service", "protocol", "policy", "standard", "platform"],
+  typeOrder: ["topic", "decision", "concept", "committee", "directorate", "policy", "standard", "service", "protocol", "platform", "source"],
   // One color per relationship, shared with its inverse: the exporter materializes
   // both directions ("Governs" and "Supervised by" are the same fact read both ways),
   // so leaving the inverses unmapped would render two-tone pairs.
@@ -85,11 +120,16 @@ export const explorer = {
     "Complies with": "#eab308", "Applies to": "#eab308",
     "Integrates": "#10b981", "Integrated into": "#10b981",
     "Publishes": "#14b8a6", "Published by": "#14b8a6",
+    "Part of": "#9a6fbf", "Contains": "#9a6fbf",
+    "Depends on": "#c2544d",
+    "About": "#7f93ad",
+    "Cites": "#8a8a8a",
   },
   tooltip: {
     service: "{indeg|integration|integrations}",
     protocol: "{indeg|service using it|services using it}",
-    "*": "{indeg|incoming connection|incoming connections}",
+    source: "{indeg|note cites it|notes cite it}",
+    "*": "{counts.Cites|source|sources} · {indeg|incoming connection|incoming connections}",
   },
   layout: {
     charge: -40,
@@ -98,17 +138,26 @@ export const explorer = {
       "*": { distance: 35, strength: 0.15 },
       Governs: { distance: 45, strength: 0.2 },
       Authenticates: { distance: 30, strength: 0.25 },
+      // Citations cross every ring: long and loose, or they'd drag the sources inward.
+      Cites: { distance: 70, strength: 0.03 },
     },
+    // Rings from the inside out: the topic hubs at the centre, the governing
+    // bodies and their norms next, then the ideas, then the systems they
+    // describe, and the primary sources as the outermost substrate.
     radial: {
       strength: 0.85,
       byType: {
-        committee: 0,
-        directorate: 0.2,
-        service: 0.5,
-        protocol: 0.7,
-        policy: 0.4,
-        standard: 0.6,
-        platform: 0.85,
+        topic: 0,
+        committee: 0.14,
+        directorate: 0.26,
+        policy: 0.38,
+        decision: 0.46,
+        standard: 0.54,
+        concept: 0.62,
+        service: 0.7,
+        protocol: 0.78,
+        platform: 0.86,
+        source: 1,
       },
     },
   },
@@ -180,6 +229,24 @@ export const explorer = {
       edges: ["Runs", "Governs"],
       targetType: "service",
       sizeBy: { countEdge: "Governs" },
+    },
+    // The grounding view: every claim in the corpus traces to a primary source on
+    // the public internet, and this mode shows which sources carry the weight.
+    {
+      id: "sources",
+      label: "Primary sources",
+      desc: "<b>What the corpus stands on.</b> Only the <code>Cites</code> edges: each note tied to the primary sources that anchor its claims — CERN official documents, technical docs, standards and papers. A source's size is how many notes rest on it; a note far from every source is a note taking someone's word for it.",
+      edges: ["Cites"],
+      sizeBy: { indegree: true },
+    },
+    // The zettelkasten skeleton: how the atomic notes hang from their topic hubs
+    // and from each other, without the domain relations or the sources.
+    {
+      id: "structure",
+      label: "Note structure",
+      desc: "<b>The shape of the corpus itself.</b> Only the structural relations: which topic hub each atomic note belongs to (<code>Part of</code>), which notes presuppose which (<code>Depends on</code>) and which system each idea is about (<code>About</code>). A hub's size is how many notes it holds.",
+      edges: ["Part of", "Depends on", "About"],
+      sizeBy: { indegree: true },
     },
   ],
 }
