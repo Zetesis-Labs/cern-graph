@@ -32,6 +32,11 @@ hosts the WLCG IAM instances, and carries the [[it-strategy-pillars]] into produ
 * **Runs**: [[cernbox]] — sync and share.
 * **Runs**: [[swan]] — interactive analysis.
 * **Runs**: [[indico]] — the event platform.
+* **Runs**: [[landb]] — the network database.
+* **Runs**: [[monit]] — the monitoring infrastructure.
+* **Runs**: [[linux-service]] — the operating system estate.
+* **Runs**: [[campus-network]] — the general-purpose network.
+* **Runs**: [[technical-network]] — the accelerator control network.
 * **Runs**: [[wlcg-iam]] — the IAM instances of the LHC VOs, on OpenShift.
 * **Runs**: [[zenodo]] — hosted in the CERN data centre.
 * **Publishes**: [[inveniordm]] — co-developed and released as open source.

@@ -22,5 +22,6 @@ hardware with disks in JBOD.
 
 * **Part of**: [[storage-and-data]]
 * **Uses**: [[xrootd]] — its remote access protocol.
+* **Cites**: [[afs-phaseout-paper]] — it absorbed AFS's live-data role.
 * **Cites**: [[eos-docs]] — architecture and access methods.
 * **Cites**: [[eos-run3-storage]] — the capacity behind Run 3.

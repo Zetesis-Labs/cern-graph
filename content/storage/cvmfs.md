@@ -22,4 +22,5 @@ firewalls that stop every other network filesystem.
 # Topology
 
 * **Part of**: [[storage-and-data]]
+* **Cites**: [[afs-phaseout-paper]] — it absorbed AFS's software-distribution role.
 * **Cites**: [[cvmfs-site]] — architecture and the HTTP-only design.

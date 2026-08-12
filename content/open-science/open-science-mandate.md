@@ -20,3 +20,4 @@ department and approved with immediate effect in September 2022.
 
 * **Part of**: [[open-science]]
 * **Cites**: [[open-science-policy]] — CERN-OPEN-2022-013.
+* **Cites**: [[cern-open-source]] — the institutional position on open source software.

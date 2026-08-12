@@ -21,4 +21,6 @@ paying. It is the substrate the rest of this layer runs on.
 # Topology
 
 * **Part of**: [[compute-platforms]]
+* **Runs on**: [[meyrin-data-centre]]
+* **Uses**: [[landb]] — network provisioning goes through it.
 * **Cites**: [[cern-cloud-docs]] — the IaaS model, Magnum and Ironic.

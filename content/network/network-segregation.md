@@ -20,5 +20,7 @@ system the accelerator cannot authenticate against.
 # Topology
 
 * **Part of**: [[networks]]
+* **About**: [[campus-network]]
+* **About**: [[technical-network]]
 * **About**: [[decision-onprem-sso]]
 * **Cites**: [[security-audited-for-the-better]] — the segregation review.

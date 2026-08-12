@@ -24,4 +24,5 @@ Keycloak entered CERN through this door.
 * **Part of**: [[open-collaboration]]
 * **Governs**: [[decision-onprem-sso]] — its anti-lock-in principle is the premise.
 * **About**: [[cern-sso]] — the SSO is one of its outcomes.
+* **Contains**: [[mattermost]] — one of the replacements it delivered.
 * **Cites**: [[malt-migration]] — trigger, principles and replacements.
