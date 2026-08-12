@@ -27,4 +27,5 @@ Authorization Service API.
 * **Complies with**: [[oc5]] — the IAA rules govern who may read which memberships.
 * **Supersedes**: [[egroups-legacy]] — took over as primary source of group information in Q4 2025.
 * **Complies with**: [[oc11]] — memberships are personal data.
+* **Catalogued in**: [[service-catalogue]]
 * **Cites**: [[gms-docs]] — mechanics and migration timeline.

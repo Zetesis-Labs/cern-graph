@@ -55,6 +55,7 @@ export const profile = {
     "Uses",          // Consumes the capability of another component
     "Backed by",     // Persists its data in a datastore
     "Reached via",   // Traffic travels over this network
+    "Catalogued in", // Registered as an entry of the institutional service catalogue
     "Supersedes",    // Replaced something that came before
     "Part of",       // Belongs to a topic hub or a larger unit
     "Contains",      // Mirror of Part of
@@ -75,6 +76,8 @@ export const profile = {
     "Complies with": "Applies to",
     "Integrates": "Integrated into",
     "Publishes": "Published by",
+    "Catalogued in": "Catalogues",
+    "Catalogues": "Catalogued in",
     "Supersedes": "Superseded by",
     "Part of": "Contains",
     "Contains": "Part of",
@@ -124,7 +127,7 @@ export const profile = {
         { source: "url", graphPath: ["url"], type: "string" },
         { source: "kind", graphPath: ["kind"], type: "string",
           enum: ["governance-document", "official-announcement", "technical-docs",
-                 "standard-spec", "peer-reviewed-paper", "policy-document"] },
+                 "standard-spec", "peer-reviewed-paper", "policy-document", "press-article"] },
       ],
     },
   ],
@@ -200,6 +203,7 @@ export const explorer = {
     "Backed by": "#0ea5e9",
     "Reached via": "#f43f5e",
     "Supersedes": "#f43f5e", "Superseded by": "#f43f5e",
+    "Catalogued in": "#22d3ee", "Catalogues": "#22d3ee",
     "Part of": "#9a6fbf", "Contains": "#9a6fbf",
     "Depends on": "#c2544d",
     "About": "#7f93ad",
@@ -349,6 +353,15 @@ export const explorer = {
       label: "The stack",
       desc: "<b>What holds up what.</b> Only the infrastructure relations — <code>Runs on</code>, <code>Backed by</code>, <code>Uses</code>, <code>Reached via</code> — with the governance plane removed. Read it downwards: a notebook rests on a sync service, which rests on the disk system, which rests on a protocol; the batch pool rests on the private cloud, which rests on a data centre.",
       edges: ["Runs on", "Backed by", "Uses", "Reached via", "Integrates"],
+      sizeBy: { indegree: true },
+    },
+    // How the institution keeps track of its own services: the catalogue, the
+    // processes around it, and the systems that feed it.
+    {
+      id: "service-management",
+      label: "Service management",
+      desc: "<b>How CERN administers its own services.</b> The ITIL layer that sits over everything: the two-dimensional catalogue (<code>Service Element</code> as the user meets it, <code>Functional Element</code> as somebody maintains it), the processes that route a ticket, and the boards that publish what is broken. Follow the cyan edges to see which systems in this graph have an entry in the institutional catalogue.",
+      edges: ["Catalogued in", "Integrates", "Runs"],
       sizeBy: { indegree: true },
     },
     // The grounding view: every claim in the corpus traces to a primary source on

@@ -19,6 +19,8 @@ somebody maintains, which is exactly the distinction an operational graph needs.
 
 # Topology
 
-* **Part of**: [[topics/governance-structure]]
+* **Part of**: [[service-management]]
 * **About**: [[it-department]]
 * **Cites**: [[itsm-cern-paper]] — ITIL, ServiceNow and the two-dimensional catalogue.
+* **Cites**: [[cern-service-structure]] — SE/FE definitions and the A/B/C/X classification.
+* **Cites**: [[cernbox-service-element]] — a live example of the user-facing half.

@@ -37,7 +37,7 @@ hosts the WLCG IAM instances, and carries the [[it-strategy-pillars]] into produ
 * **Runs**: [[linux-service]] — the operating system estate.
 * **Runs**: [[campus-network]] — the general-purpose network.
 * **Runs**: [[technical-network]] — the accelerator control network.
-* **Runs**: [[servicenow]] — the service management platform.
+* **Runs**: [[servicenow]] — the service management platform (jointly with General Services).
 * **Runs**: [[cern-gitlab]] — code hosting and CI.
 * **Runs**: [[cernphone]] — telephony.
 * **Runs**: [[mail-service]] — e-mail.

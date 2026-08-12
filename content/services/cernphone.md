@@ -25,6 +25,7 @@ with another, build on open protocols and keep the backend at home.
 
 * **Part of**: [[open-collaboration]]
 * **Part of**: [[malt]]
+* **Catalogued in**: [[service-catalogue]]
 * **Supersedes**: [[legacy-telephony]]
 * **Cites**: [[cernphone-announcement]] — the migration and what it replaced.
 * **Cites**: [[cernphone-docs]] — SIP backend and the two clients.

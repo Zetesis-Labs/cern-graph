@@ -22,5 +22,6 @@ paying. It is the substrate the rest of this layer runs on.
 
 * **Part of**: [[compute-platforms]]
 * **Runs on**: [[meyrin-data-centre]]
+* **Runs on**: [[prevessin-computing-centre]] — the cloud spans both centres.
 * **Uses**: [[landb]] — network provisioning goes through it.
 * **Cites**: [[cern-cloud-docs]] — the IaaS model, Magnum and Ironic.

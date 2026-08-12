@@ -19,5 +19,4 @@ retired, without interrupting an experiment that runs for years at a time.
 # Topology
 
 * **Part of**: [[topics/governance-structure]]
-* **Hosts**: [[cern-cloud]]
 * **Cites**: [[cern-data-centre]] — the data centre and its role.

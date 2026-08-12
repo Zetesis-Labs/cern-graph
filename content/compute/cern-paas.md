@@ -25,5 +25,6 @@ self-service: users administer their own namespace. It is also where the WAFs of
 * **Runs on**: [[cern-cloud]]
 * **Integrates**: [[cern-sso]] — authentication comes with the platform.
 * **Complies with**: [[cis-v8-audit]] — the WAF layer runs here.
+* **Catalogued in**: [[service-catalogue]]
 * **Cites**: [[paas-openshift-paper]] — the platform and its integrations.
 * **Cites**: [[webeos-docs]] — OKD4 and the self-service model.

@@ -20,4 +20,5 @@ LHC data** across the WLCG — up to petabytes per month. It is the piece that t
 
 * **Part of**: [[storage-and-data]]
 * **Reached via**: [[lhcopn]] — the dedicated network its Tier-0/Tier-1 traffic rides.
+* **Catalogued in**: [[service-catalogue]]
 * **Cites**: [[fts-service]] — function and scale.

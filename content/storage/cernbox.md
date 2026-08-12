@@ -21,4 +21,5 @@ substrate, two very different user populations.
 
 * **Part of**: [[storage-and-data]]
 * **Backed by**: [[eos]]
+* **Catalogued in**: [[service-catalogue]]
 * **Cites**: [[cernbox-docs]] — interfaces and backend.

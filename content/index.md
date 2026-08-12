@@ -36,6 +36,8 @@ Twelve topic hubs organize the corpus. Enter through any of them:
 * [[identity-architecture]] — the **Keycloak SSO**, the C#/.NET Authorization Service, dynamic groups (**GMS**), OIDC integration and the token claims — plus the three decisions that shaped them.
 * [[grid-federation]] — the **WLCG IAM**, VO-centred transitive trust, the Common JWT Profile, capability scopes, lifetime-based security and the **Sirtfi** and **AARC** trust frameworks.
 
+* [[service-management]] — **ServiceNow** since 2011 for the *whole* organisation (lightbulbs included), the SE/FE catalogue with its A/B/C/X criticality, the Service Desk at 77777, the status boards — and **GGUS**, the grid's own helpdesk, bridged in.
+
 **What is shared**
 
 * [[open-science]] — the 2022 **Open Science Policy** and the Invenio family: InvenioRDM, Zenodo, and the CDS migration.
@@ -43,7 +45,7 @@ Twelve topic hubs organize the corpus. Enter through any of them:
 
 ## 📚 Primary sources
 
-Every factual note declares `Cites` edges to the documents that anchor it: CERN official announcements, Council documents, WLCG terms of reference, service documentation, standards and peer-reviewed papers — **87 sources** under `sources/`, each with its URL and the specific claims it supports.
+Every factual note declares `Cites` edges to the documents that anchor it: CERN official announcements, Council documents, WLCG terms of reference, service documentation, standards and peer-reviewed papers — **100 sources** under `sources/`, each with its URL and the specific claims it supports.
 
 ## 🧩 How this corpus is built
 

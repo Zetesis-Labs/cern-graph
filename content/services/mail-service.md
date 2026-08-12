@@ -21,4 +21,5 @@ a principle and becomes a project plan.
 
 * **Part of**: [[open-collaboration]]
 * **Part of**: [[malt]]
+* **Catalogued in**: [[service-catalogue]]
 * **Cites**: [[cern-email-migration]] — the scale and the selection process.
