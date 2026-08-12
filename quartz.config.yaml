@@ -1,0 +1,217 @@
+# yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
+configuration:
+  pageTitle: CERN IT Governance
+  pageTitleSuffix: " · Grafo OKF"
+  enableSPA: true
+  enablePopovers: true
+  analytics: null
+  locale: es-ES
+  baseUrl: cern-it-governance.example.com
+  ignorePatterns:
+    - private
+    - templates
+    - .obsidian
+  theme:
+    fontOrigin: googleFonts
+    cdnCaching: true
+    typography:
+      header: Inter
+      body: Inter
+      code: IBM Plex Mono
+    colors:
+      lightMode:
+        light: "#faf8f8"
+        lightgray: "#e5e5e5"
+        gray: "#b8b8b8"
+        darkgray: "#4e4e4e"
+        dark: "#2b2b2b"
+        secondary: "#0284c7"
+        tertiary: "#0d9488"
+        highlight: rgba(2, 132, 199, 0.15)
+        textHighlight: "#fff23688"
+      darkMode:
+        light: "#0f172a"
+        lightgray: "#1e293b"
+        gray: "#475569"
+        darkgray: "#cbd5e1"
+        dark: "#f8fafc"
+        secondary: "#38bdf8"
+        tertiary: "#2dd4bf"
+        highlight: rgba(56, 189, 248, 0.15)
+        textHighlight: "#b3aa0288"
+plugins:
+  - source: "github:quartz-community/created-modified-date"
+    enabled: true
+    options:
+      defaultDateType: modified
+      priority:
+        - frontmatter
+        - git
+        - filesystem
+    order: 10
+  - source: "github:quartz-community/syntax-highlighting"
+    enabled: true
+    options:
+      theme:
+        light: github-light
+        dark: github-dark
+      keepBackground: false
+    order: 20
+  - source: "github:quartz-community/obsidian-flavored-markdown"
+    enabled: true
+    options:
+      enableInHtmlEmbed: false
+      enableCheckbox: true
+    order: 30
+  - source: "github:quartz-community/github-flavored-markdown"
+    enabled: true
+    order: 40
+  - source: "github:quartz-community/table-of-contents"
+    enabled: true
+    order: 50
+    layout:
+      position: right
+      priority: 30
+  - source: "github:quartz-community/crawl-links"
+    enabled: true
+    options:
+      markdownLinkResolution: shortest
+    order: 60
+  - source: "github:quartz-community/description"
+    enabled: true
+    order: 70
+  - source: "github:quartz-community/latex"
+    enabled: true
+    options:
+      renderEngine: katex
+    order: 80
+  - source: "github:quartz-community/remove-draft"
+    enabled: true
+  - source: "github:quartz-community/alias-redirects"
+    enabled: true
+  - source: "github:quartz-community/content-index"
+    enabled: true
+    options:
+      enableSiteMap: true
+      enableRSS: true
+  - source: "github:quartz-community/favicon"
+    enabled: true
+  - source: "github:quartz-community/og-image"
+    enabled: true
+  - source: "github:quartz-community/cname"
+    enabled: true
+  - source: "github:quartz-community/canvas-page"
+    enabled: true
+  - source: "github:quartz-community/content-page"
+    enabled: true
+  - source: "github:quartz-community/folder-page"
+    enabled: true
+  - source: "github:quartz-community/tag-page"
+    enabled: true
+  - source: "github:quartz-community/explorer"
+    enabled: true
+    layout:
+      position: left
+      priority: 50
+  - source: "./quartz-okf"
+    enabled: true
+  - source: "./quartz-okf-explorer"
+    enabled: true
+  - source: ./quartz-okf-panels
+    enabled: true
+    layout:
+      position: right
+      priority: 60
+      condition: not-index
+  - source: "github:quartz-community/search"
+    enabled: true
+    layout:
+      position: left
+      priority: 20
+      group: toolbar
+      groupOptions:
+        grow: true
+  - source: "github:quartz-community/backlinks"
+    enabled: true
+    layout:
+      position: right
+      priority: 50
+  - source: "github:quartz-community/article-title"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 10
+  - source: "github:quartz-community/content-meta"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 20
+  - source: "github:quartz-community/page-title"
+    enabled: true
+    layout:
+      position: left
+      priority: 10
+  - source: "github:quartz-community/darkmode"
+    enabled: true
+    layout:
+      position: left
+      priority: 30
+      group: toolbar
+  - source: "github:quartz-community/reader-mode"
+    enabled: true
+    layout:
+      position: left
+      priority: 35
+      group: toolbar
+  - source: "github:quartz-community/breadcrumbs"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 5
+      condition: not-index
+  - source: "github:quartz-community/footer"
+    enabled: true
+    options:
+      links:
+        CERN: https://home.cern
+        GitHub OKF: https://github.com/Zetesis-Labs/quartz-okf
+  - source: "github:quartz-community/note-properties"
+    enabled: true
+    options:
+      includeAll: false
+      includedProperties:
+        - description
+        - tags
+        - aliases
+      excludedProperties: []
+      hidePropertiesView: false
+      delimiters: ---
+      language: yaml
+    order: 5
+    layout:
+      position: beforeBody
+      priority: 15
+      display: all
+layout:
+  groups:
+    toolbar:
+      priority: 35
+      direction: row
+      gap: 0.5rem
+  byPageType:
+    "404":
+      positions:
+        beforeBody: []
+        left: []
+        right: []
+    content: {}
+    folder:
+      exclude:
+        - reader-mode
+      positions:
+        right: []
+    tag:
+      exclude:
+        - reader-mode
+      positions:
+        right: []

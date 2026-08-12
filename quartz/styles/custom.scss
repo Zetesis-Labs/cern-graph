@@ -1,0 +1,14 @@
+// Estilos personalizados para el grafo de CERN IT Governance
+:root {
+  --okf-accent: #0284c7;
+}
+
+[saved-theme="dark"] {
+  --okf-accent: #38bdf8;
+}
+
+.page-header {
+  border-bottom: 1px solid var(--lightgray);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
