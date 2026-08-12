@@ -1,7 +1,7 @@
 ---
 title: "CERN's 4th Environment Report"
 type: source
-url: "https://home.cern/news/news/cern/cern-reaffirms-its-commitment-environmentally-responsible-research-release-its-4th"
+url: "https://home.cern/cern-reaffirms-its-commitment-environmentally-responsible-research-release-its-4th/"
 kind: policy-document
 description: "The 2023–2024 environment report and the objectives approved to 2030."
 ---

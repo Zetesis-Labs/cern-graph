@@ -1,7 +1,7 @@
 ---
 title: "CERN management structure for 2026–2030 (part 2)"
 type: source
-url: "https://home.cern/cern-management-structure-2026-2030/-part-2"
+url: "https://home.cern/cern-management-structure-2026-2030-part-2/"
 kind: official-announcement
 description: "Second installment: RCS sector composition and the remaining sector directors."
 ---
