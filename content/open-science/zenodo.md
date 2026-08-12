@@ -2,6 +2,7 @@
 title: "Zenodo"
 type: platform
 entorno: scientific-grid
+status: current
 tags: [open-science, platform]
 description: "The global open repository — a service built on InvenioRDM, hosted at CERN."
 ---

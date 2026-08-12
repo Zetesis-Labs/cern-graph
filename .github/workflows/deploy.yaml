@@ -58,6 +58,22 @@ jobs:
             test -s "public/static/$src" || { echo "el explorador referencia /static/$src y no se ha emitido"; exit 1; }
           done
 
+      # Un corpus que se apoya en fuentes primarias vive de que esos enlaces sigan
+      # existiendo. home.cern reorganiza sus URLs cada cierto tiempo y los 404 son
+      # silenciosos: el sitio compila igual y la cita queda muerta.
+      - name: Comprobar que las fuentes primarias siguen vivas
+        continue-on-error: true
+        run: |
+          dead=0
+          for u in $(grep -h '^url:' content/sources/*.md | sed 's/url: "//;s/"$//'); do
+            code=$(curl -s -o /dev/null -w '%{http_code}' -L --max-time 25 "$u" || echo 000)
+            case "$code" in
+              200|403|429) ;;  # 403/429 = antibot, no enlace roto
+              *) echo "::warning::fuente inalcanzable ($code): $u"; dead=$((dead+1)) ;;
+            esac
+          done
+          echo "fuentes inalcanzables: $dead"
+
       # Idempotente: si el proyecto ya existe, el comando falla y se ignora.
       - name: Asegurar que el proyecto de Pages existe
         run: >-

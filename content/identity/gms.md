@@ -2,6 +2,7 @@
 title: "Group Management System (GMS)"
 type: service
 entorno: corporate
+status: current
 tags: [identity]
 aliases: [group-management-system]
 description: "Dynamic group membership computed from HR data, replacing two decades of e-groups."
@@ -24,4 +25,6 @@ Authorization Service API.
 * **Integrates**: [[authorization-service-api]] — groups are where roles bind.
 * **Integrates**: [[cern-sso]] — memberships flow into login sessions.
 * **Complies with**: [[oc5]] — the IAA rules govern who may read which memberships.
+* **Supersedes**: [[egroups-legacy]] — took over as primary source of group information in Q4 2025.
+* **Complies with**: [[oc11]] — memberships are personal data.
 * **Cites**: [[gms-docs]] — mechanics and migration timeline.

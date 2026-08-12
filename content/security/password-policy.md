@@ -2,6 +2,7 @@
 title: "The password policy"
 type: policy
 entorno: corporate
+status: current
 tags: [security, policy]
 description: "NIST 800-63b alignment: 15 characters, no complexity theatre, breach checks."
 ---

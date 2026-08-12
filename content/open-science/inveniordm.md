@@ -2,6 +2,7 @@
 title: "InvenioRDM"
 type: platform
 entorno: scientific-grid
+status: current
 tags: [open-science, platform]
 description: "The turn-key repository engine: 1 record or 100 million, MIT-licensed."
 ---

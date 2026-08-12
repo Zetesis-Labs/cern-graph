@@ -2,6 +2,7 @@
 title: "CDS and repository.cern"
 type: platform
 entorno: corporate
+status: current
 tags: [open-science, platform]
 description: "Twenty years of institutional memory migrating from Invenio v1 to InvenioRDM."
 ---

@@ -2,6 +2,7 @@
 title: "Authorization Service API"
 type: service
 entorno: corporate
+status: current
 tags: [identity]
 description: "The C#/.NET Core control plane for applications, roles and resources."
 ---

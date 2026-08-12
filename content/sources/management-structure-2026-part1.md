@@ -1,7 +1,7 @@
 ---
 title: "CERN management structure for 2026–2030 (part 1)"
 type: source
-url: "https://home.cern/news/opinion/cern/cern-management-structure-2026-2030"
+url: "https://home.cern/cern-management-structure-2026-2030/"
 kind: official-announcement
 description: "Mark Thomson's announcement of the five-sector, 13-department structure endorsed by Council."
 ---

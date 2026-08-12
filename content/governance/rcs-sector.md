@@ -1,7 +1,8 @@
 ---
 title: "Research and Computing Sector (RCS)"
-type: directorate
+type: unit
 entorno: corporate
+status: current
 tags: [governance]
 description: "The sector that owns physics and computing: EP, TH and IT under one director."
 ---

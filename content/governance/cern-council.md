@@ -2,6 +2,7 @@
 title: "CERN Council"
 type: committee
 entorno: corporate
+status: current
 tags: [governance]
 description: "The supreme governing organ: delegates of the 25 Member States."
 ---
@@ -19,5 +20,6 @@ hardware traces its authorization here.
 
 * **Part of**: [[governance-structure]]
 * **Governs**: [[sector-structure-2026]] — endorsed the 2026–2030 directorate structure at its March session.
+* **Funds**: [[medium-term-plan]] — approves the plan and its budget.
 * **Cites**: [[cern-convention]] — Articles IV–V establish the Council as supreme organ.
 * **Cites**: [[member-states]] — the current list of 25.

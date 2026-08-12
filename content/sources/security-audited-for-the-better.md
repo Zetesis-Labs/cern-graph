@@ -1,7 +1,7 @@
 ---
 title: "Computer Security: Audited for the better"
 type: source
-url: "https://home.cern/news/news/computing/computer-security-audited-better"
+url: "https://home.cern/computer-security-audited-better/"
 kind: official-announcement
 description: "CERN's own account of the summer 2023 CIS v8 audit: 82 recommendations, 73 accepted."
 ---

@@ -1,7 +1,8 @@
 ---
 title: "Computer Security Officer"
-type: directorate
+type: role
 entorno: corporate
+status: current
 tags: [security, governance]
 description: "The executive mandated to protect CERN's operations and reputation from cyber-threats."
 ---

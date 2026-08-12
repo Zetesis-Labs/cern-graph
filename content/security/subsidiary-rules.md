@@ -2,6 +2,7 @@
 title: "The OC5 subsidiary rules"
 type: policy
 entorno: corporate
+status: current
 tags: [security, policy]
 description: "The rule families that turn OC5's principles into enforceable specifics."
 ---

@@ -2,6 +2,7 @@
 title: "The WLCG Common JWT Profile"
 type: standard
 entorno: scientific-grid
+status: current
 tags: [grid, standard]
 description: "The token contract every issuer and relying party in the grid implements — v1.3."
 ---
@@ -20,4 +21,5 @@ because they all parse the same claims the same way.
 
 * **Part of**: [[grid-federation]]
 * **Governs**: [[wlcg-iam]] — issuers implement the profile.
+* **Supersedes**: [[wlcg-token-profile-v1]] — v1.3 replaced the 2019 lifetimes.
 * **Cites**: [[wlcg-jwt-profile]] — the current specification.

@@ -1,7 +1,8 @@
 ---
 title: "The five-sector structure (2026–2030)"
-type: directorate
+type: unit
 entorno: corporate
+status: current
 tags: [governance]
 description: "Five sectors, 13 departments, in force since January 2026 under Mark Thomson."
 ---

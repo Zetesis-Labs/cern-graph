@@ -2,6 +2,7 @@
 title: "The four pillars of the IT strategy"
 type: policy
 entorno: corporate
+status: current
 tags: [governance, it]
 description: "Provider, Optimiser, Pioneer, Connector: what the IT department is for."
 ---

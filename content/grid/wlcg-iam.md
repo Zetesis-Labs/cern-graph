@@ -2,6 +2,7 @@
 title: "WLCG IAM"
 type: service
 entorno: scientific-grid
+status: current
 tags: [grid, identity]
 aliases: [indigo-iam]
 description: "The INDIGO IAM instances for the LHC experiments, hosted by CERN IT."

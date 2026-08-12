@@ -2,6 +2,7 @@
 title: "The CIS v8 audit (2023)"
 type: standard
 entorno: corporate
+status: current
 tags: [security, audit]
 description: "82 recommendations, 73 accepted: the audit that ended implicit trust."
 ---

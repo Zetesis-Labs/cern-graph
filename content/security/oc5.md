@@ -2,6 +2,7 @@
 title: "OC5 — the Computing Rules"
 type: policy
 entorno: corporate
+status: current
 tags: [security, policy]
 description: "Operational Circular No. 5: the binding law of every CERN computing resource."
 ---

@@ -1,7 +1,8 @@
 ---
 title: "The CIO role"
-type: directorate
+type: role
 entorno: corporate
+status: current
 tags: [governance]
 aliases: [chief-information-officer]
 description: "CERN's first Chief Information Officer: strategy and policy extracted from operations."

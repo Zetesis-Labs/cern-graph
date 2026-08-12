@@ -1,7 +1,7 @@
 ---
 title: "Computer Security: 5 ways to remotely connect to CERN"
 type: source
-url: "https://home.web.cern.ch/news/news/computing/computer-security-5-ways-remotely-connect-cern"
+url: "https://home.cern/computer-security-5-ways-remotely-connect-cern/"
 kind: official-announcement
 description: "The 2FA rollout dates for SSO, LXPLUS SSH and Windows Terminal Services."
 ---

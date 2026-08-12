@@ -1,7 +1,7 @@
 ---
 title: "CERN management structure for 2026–2030 (part 3)"
 type: source
-url: "https://home.web.cern.ch/news/opinion/cern/cern-management-structure-2026-2030-part-3"
+url: "https://home.cern/cern-management-structure-2026-2030-part-3/"
 kind: official-announcement
 description: "Third installment: department head appointments, including Simone Campana for IT."
 ---

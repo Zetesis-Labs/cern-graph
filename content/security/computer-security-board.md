@@ -2,6 +2,7 @@
 title: "Computer Security Board"
 type: committee
 entorno: corporate
+status: current
 tags: [security, governance]
 description: "Security liaisons from every department and experiment, legislating the subsidiary rules."
 ---

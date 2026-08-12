@@ -2,6 +2,7 @@
 title: "The Open Science Policy (2022)"
 type: policy
 entorno: corporate
+status: current
 tags: [open-science, policy]
 description: "Approved September 2022 with immediate effect: open access, open data, open source."
 ---

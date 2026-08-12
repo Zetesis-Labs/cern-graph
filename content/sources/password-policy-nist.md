@@ -1,7 +1,7 @@
 ---
 title: "Computer Security: ThisIsAVeryGoodPassword"
 type: source
-url: "https://home.cern/news/news/computing/computer-security-thisisaverygoodpassword"
+url: "https://home.cern/computer-security-thisisaverygoodpassword/"
 kind: official-announcement
 description: "The password policy change: NIST 800-63b alignment, 15-character minimum, breach checks."
 ---

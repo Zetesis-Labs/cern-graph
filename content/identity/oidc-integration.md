@@ -2,6 +2,7 @@
 title: "OIDC integration at CERN"
 type: protocol
 entorno: cross-cutting
+status: current
 tags: [identity, protocol]
 description: "One discovery endpoint, standard flows: how any application plugs into the SSO."
 ---

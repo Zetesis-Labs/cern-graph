@@ -1,7 +1,8 @@
 ---
 title: "IT Department"
-type: directorate
+type: unit
 entorno: corporate
+status: current
 tags: [governance, it]
 aliases: [it-department]
 description: "The operational arm: Simone Campana's department inside RCS."
@@ -22,6 +23,7 @@ hosts the WLCG IAM instances, and carries the [[it-strategy-pillars]] into produ
 * **Runs**: [[cern-sso]] — the corporate authentication service.
 * **Runs**: [[gms]] — group management.
 * **Runs**: [[authorization-service-api]] — the authorization control plane.
+* **Runs**: [[prevessin-computing-centre]] — the Tier-0 facility.
 * **Runs**: [[wlcg-iam]] — the IAM instances of the LHC VOs, on OpenShift.
 * **Runs**: [[zenodo]] — hosted in the CERN data centre.
 * **Publishes**: [[inveniordm]] — co-developed and released as open source.
