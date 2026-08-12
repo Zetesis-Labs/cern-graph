@@ -47,8 +47,16 @@ jobs:
             test -s "$f" || { echo "falta el asset del grafo: $f"; exit 1; }
           done
           nodes=$(python3 -c "import json;print(len(json.load(open('public/static/okf-graph.json'))['nodes']))")
-          echo "nodos en el grafo: $nodes"
+          edges=$(python3 -c "import json;print(len(json.load(open('public/static/okf-graph.json'))['edges']))")
+          echo "grafo: $nodes nodos, $edges aristas"
           test "$nodes" -ge 1 || { echo "el grafo salió vacío"; exit 1; }
+          # Sin aristas el sitio publica una lista de notas, no un grafo.
+          test "$edges" -ge 1 || { echo "el grafo no tiene aristas: revisa las secciones '# Topology'"; exit 1; }
+          # El explorador referencia sus scripts desde /static: si alguno no se emite,
+          # el lienzo queda en blanco y el fallo solo se ve abriendo el navegador.
+          for src in $(grep -oE '<script src="/static/[^"]+"' public/static/explorer.html | sed -E 's|.*/static/([^"]+)"|\1|'); do
+            test -s "public/static/$src" || { echo "el explorador referencia /static/$src y no se ha emitido"; exit 1; }
+          done
 
       # Idempotente: si el proyecto ya existe, el comando falla y se ignora.
       - name: Asegurar que el proyecto de Pages existe
