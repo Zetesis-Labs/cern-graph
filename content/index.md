@@ -31,7 +31,7 @@ Twelve topic hubs organize the corpus. Enter through any of them:
 **What is built**
 
 * [[storage-and-data]] — **EOS**, the tape archive **CTA** (and the **CASTOR** it replaced), **CERNBox**, and the software and data movers: **CVMFS**, **FTS**, **Rucio**.
-* [[compute-platforms]] — the **OpenStack** private cloud under 90% of the data centre, the **HTCondor** batch pool that replaced LSF, the **OpenShift** PaaS and **SWAN**.
+* [[compute-platforms]] — the **OpenStack** private cloud under 90% of the data centre, the **HTCondor** batch pool that replaced LSF, the **OpenShift** PaaS, **GitLab**, **SWAN** and the Linux estate that moved to **AlmaLinux**.
 * [[networks]] — **LHCOPN** and **LHCONE** outward; inward the **campus** and **technical** networks, the **LanDB** registry every device must sit in, the perimeter firewall, and **White Rabbit**, the sub-nanosecond timing network that became an IEEE standard.
 * [[identity-architecture]] — the **Keycloak SSO**, the C#/.NET Authorization Service, dynamic groups (**GMS**), OIDC integration and the token claims — plus the three decisions that shaped them.
 * [[grid-federation]] — the **WLCG IAM**, VO-centred transitive trust, the Common JWT Profile, capability scopes, lifetime-based security and the **Sirtfi** and **AARC** trust frameworks.
@@ -39,11 +39,11 @@ Twelve topic hubs organize the corpus. Enter through any of them:
 **What is shared**
 
 * [[open-science]] — the 2022 **Open Science Policy** and the Invenio family: InvenioRDM, Zenodo, and the CDS migration.
-* [[open-collaboration]] — **MALT**, **CERN openlab**, **SCOAP3**, the **CERN Open Hardware Licence** and the **Quantum Technology Initiative**.
+* [[open-collaboration]] — **MALT** and what it delivered (**Mattermost**, the **Kopano** mail migration, **CERNphone** with its own SIP backend), plus **CERN openlab**, **SCOAP3**, the **CERN Open Hardware Licence** and the **Quantum Technology Initiative**.
 
 ## 📚 Primary sources
 
-Every factual note declares `Cites` edges to the documents that anchor it: CERN official announcements, Council documents, WLCG terms of reference, service documentation, standards and peer-reviewed papers — **77 sources** under `sources/`, each with its URL and the specific claims it supports.
+Every factual note declares `Cites` edges to the documents that anchor it: CERN official announcements, Council documents, WLCG terms of reference, service documentation, standards and peer-reviewed papers — **87 sources** under `sources/`, each with its URL and the specific claims it supports.
 
 ## 🧩 How this corpus is built
 
