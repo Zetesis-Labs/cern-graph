@@ -181,8 +181,13 @@ plugins:
     enabled: true
     options:
       includeAll: false
+      # url and kind belong to source notes: the plugin linkifies URLs, so the
+      # primary source is one click away from the top of its page.
       includedProperties:
         - description
+        - url
+        - kind
+        - status
         - tags
         - aliases
       excludedProperties: []
