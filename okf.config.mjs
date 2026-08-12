@@ -20,7 +20,14 @@ export const profile = {
     "standard",    // External frameworks measured against: CIS v8, WLCG token profile
     "agreement",   // Instruments between parties: MoUs, licences, consortium agreements
     // — What is built —
-    "service",     // Running systems: SSO, GMS, WLCG IAM
+    // The infrastructure vocabulary is the Typed Topology base profile's: a
+    // datastore, a cluster and a network are not interchangeable with "service",
+    // and collapsing them loses what the operational layer is actually about.
+    "service",     // User-facing running systems: SSO, GMS, batch, CERNBox
+    "datastore",   // Where data rests: EOS, CTA, CASTOR
+    "cluster",     // Pooled compute: the OpenStack cloud, the HTCondor pool, the PaaS
+    "network",     // Dedicated connectivity: LHCOPN, LHCONE
+    "technology",  // Software products, deployed by many: CVMFS, Rucio, FTS, XRootD
     "platform",    // Data and publication repositories: InvenioRDM, Zenodo
     "facility",    // Physical infrastructure: data centres, grid tiers
     "protocol",    // Technical specifications: OIDC, OAuth2
@@ -41,6 +48,13 @@ export const profile = {
     "Complies with", // Adherence to a standard, policy or agreement
     "Integrates",    // Software or infrastructure coupling
     "Publishes",     // Data or code dissemination
+    // Infrastructure relations from the Typed Topology base profile. Without
+    // them every coupling was an "Integrates", which said nothing about which
+    // side holds the other up.
+    "Runs on",       // Deployed on top of: a service on a cluster
+    "Uses",          // Consumes the capability of another component
+    "Backed by",     // Persists its data in a datastore
+    "Reached via",   // Traffic travels over this network
     "Supersedes",    // Replaced something that came before
     "Part of",       // Belongs to a topic hub or a larger unit
     "Contains",      // Mirror of Part of
@@ -64,6 +78,10 @@ export const profile = {
     "Supersedes": "Superseded by",
     "Part of": "Contains",
     "Contains": "Part of",
+    "Runs on": "Hosts",
+    "Hosts": "Runs on",
+    "Uses": "Consumed by",
+    "Consumed by": "Uses",
   },
   propertyGroups: [
     // Which of the two worlds a node belongs to: the centralized corporate
@@ -73,7 +91,8 @@ export const profile = {
       label: "Operational Scope",
       rule: "scope-valid",
       appliesTo: ["committee", "role", "unit", "policy", "standard", "agreement", "service",
-                  "platform", "facility", "protocol", "programme", "concept", "decision", "topic"],
+                  "datastore", "cluster", "network", "technology", "platform", "facility",
+                  "protocol", "programme", "concept", "decision", "topic"],
       fields: [
         { source: "entorno", graphPath: ["entorno"], type: "string",
           enum: ["corporate", "scientific-grid", "cross-cutting"] },
@@ -87,7 +106,8 @@ export const profile = {
       label: "Lifecycle",
       rule: "lifecycle-valid",
       appliesTo: ["committee", "role", "unit", "policy", "standard", "agreement", "service",
-                  "platform", "facility", "protocol", "programme"],
+                  "datastore", "cluster", "network", "technology", "platform", "facility",
+                  "protocol", "programme"],
       fields: [
         { source: "status", graphPath: ["status"], type: "string",
           enum: ["current", "superseded", "planned"] },
@@ -116,7 +136,7 @@ export const explorer = {
   backTo: { href: "/", label: "portal" },
   // The subjects of compliance: the only types tinted by countEdge-based modes.
   // Governing bodies and the norms themselves keep their type color there.
-  knowledgeTypes: ["service", "platform", "facility"],
+  knowledgeTypes: ["service", "datastore", "cluster", "network", "platform", "facility"],
   typeColors: {
     committee: "#3b82f6",   // Blue — collegiate bodies
     role: "#d946ef",        // Fuchsia — a post held by a person
@@ -125,6 +145,10 @@ export const explorer = {
     standard: "#eab308",    // Gold — external frameworks
     agreement: "#d97706",   // Amber — instruments between parties
     service: "#10b981",     // Emerald — running systems
+    datastore: "#0ea5e9",   // Sky — where the data rests
+    cluster: "#8b5cf6",     // Violet — pooled compute
+    network: "#f43f5e",     // Rose — dedicated connectivity
+    technology: "#84cc16",  // Lime — software products
     platform: "#14b8a6",    // Teal — repositories
     facility: "#64748b",    // Slate — physical infrastructure
     protocol: "#f97316",    // Orange — specifications
@@ -142,6 +166,10 @@ export const explorer = {
     standard: "Standard / Framework",
     agreement: "Agreement / Licence",
     service: "Service / System",
+    datastore: "Datastore",
+    cluster: "Compute cluster",
+    network: "Network",
+    technology: "Technology / Software",
     platform: "Data platform",
     facility: "Facility",
     protocol: "Protocol / Specification",
@@ -152,8 +180,8 @@ export const explorer = {
     source: "Primary source",
   },
   typeOrder: ["topic", "decision", "concept", "committee", "role", "unit", "policy",
-              "agreement", "standard", "programme", "service", "protocol", "platform",
-              "facility", "source"],
+              "agreement", "standard", "programme", "service", "technology", "protocol",
+              "platform", "datastore", "cluster", "network", "facility", "source"],
   // One color per relationship, shared with its inverse: the exporter materializes
   // both directions ("Governs" and "Supervised by" are the same fact read both ways),
   // so leaving the inverses unmapped would render two-tone pairs.
@@ -167,6 +195,10 @@ export const explorer = {
     "Complies with": "#eab308", "Applies to": "#eab308",
     "Integrates": "#10b981", "Integrated into": "#10b981",
     "Publishes": "#14b8a6", "Published by": "#14b8a6",
+    "Runs on": "#8b5cf6", "Hosts": "#8b5cf6",
+    "Uses": "#84cc16", "Consumed by": "#84cc16",
+    "Backed by": "#0ea5e9",
+    "Reached via": "#f43f5e",
     "Supersedes": "#f43f5e", "Superseded by": "#f43f5e",
     "Part of": "#9a6fbf", "Contains": "#9a6fbf",
     "Depends on": "#c2544d",
@@ -204,10 +236,14 @@ export const explorer = {
         standard: 0.52,
         programme: 0.58,
         concept: 0.64,
-        service: 0.72,
+        service: 0.7,
+        technology: 0.74,
         protocol: 0.78,
-        platform: 0.84,
-        facility: 0.9,
+        platform: 0.82,
+        datastore: 0.86,
+        cluster: 0.9,
+        network: 0.93,
+        facility: 0.96,
         source: 1,
       },
     },
@@ -305,6 +341,15 @@ export const explorer = {
       edges: ["Runs", "Governs"],
       targetType: "service",
       sizeBy: { countEdge: "Governs" },
+    },
+    // The operational layer on its own terms: what holds up what. Only the
+    // infrastructure relations, so the governance plane drops away entirely.
+    {
+      id: "stack",
+      label: "The stack",
+      desc: "<b>What holds up what.</b> Only the infrastructure relations — <code>Runs on</code>, <code>Backed by</code>, <code>Uses</code>, <code>Reached via</code> — with the governance plane removed. Read it downwards: a notebook rests on a sync service, which rests on the disk system, which rests on a protocol; the batch pool rests on the private cloud, which rests on a data centre.",
+      edges: ["Runs on", "Backed by", "Uses", "Reached via", "Integrates"],
+      sizeBy: { indegree: true },
     },
     // The grounding view: every claim in the corpus traces to a primary source on
     // the public internet, and this mode shows which sources carry the weight.

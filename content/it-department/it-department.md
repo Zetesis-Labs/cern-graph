@@ -24,6 +24,14 @@ hosts the WLCG IAM instances, and carries the [[it-strategy-pillars]] into produ
 * **Runs**: [[gms]] — group management.
 * **Runs**: [[authorization-service-api]] — the authorization control plane.
 * **Runs**: [[prevessin-computing-centre]] — the Tier-0 facility.
+* **Runs**: [[eos]] — the disk layer.
+* **Runs**: [[cta]] — the tape archive.
+* **Runs**: [[cern-cloud]] — the private cloud under most of the data centre.
+* **Runs**: [[batch-service]] — high-throughput computing.
+* **Runs**: [[cern-paas]] — the web platform.
+* **Runs**: [[cernbox]] — sync and share.
+* **Runs**: [[swan]] — interactive analysis.
+* **Runs**: [[indico]] — the event platform.
 * **Runs**: [[wlcg-iam]] — the IAM instances of the LHC VOs, on OpenShift.
 * **Runs**: [[zenodo]] — hosted in the CERN data centre.
 * **Publishes**: [[inveniordm]] — co-developed and released as open source.

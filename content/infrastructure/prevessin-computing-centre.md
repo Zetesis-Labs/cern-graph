@@ -21,5 +21,6 @@ operating expense.
 
 * **Part of**: [[topics/governance-structure]]
 * **Complies with**: [[energy-objectives]]
+* **Hosts**: [[cern-cloud]] — the compute it provisions lives here.
 * **Cites**: [[prevessin-data-centre]] — inauguration, dimensions, PUE.
 * **Cites**: [[cern-it-environmental]] — energy as an IT design constraint.

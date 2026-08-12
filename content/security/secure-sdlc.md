@@ -20,4 +20,5 @@ The SOC watches the rest, ingesting Google Workspace, Azure and network logs.
 
 * **Part of**: [[security-governance]]
 * **About**: [[it-department]] — it reshapes how the department's users ship software.
+* **About**: [[cern-paas]] — where the WAF controls are enforced.
 * **Cites**: [[security-audited-for-the-better]] — the measure list.

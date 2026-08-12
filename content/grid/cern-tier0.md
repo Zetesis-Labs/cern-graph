@@ -20,5 +20,8 @@ down-times. It is the commitment that justifies the capital expenditure — the
 
 * **Part of**: [[tier-model]]
 * **Complies with**: [[wlcg-mou-agreement]]
+* **Backed by**: [[eos]] — the first copy of the raw data lands on disk.
+* **Backed by**: [[cta]] — and its custodial copy on tape.
+* **Reached via**: [[lhcopn]] — how it distributes to the Tier-1s.
 * **Cites**: [[wlcg-tiers]] — Tier-0 responsibilities.
 * **Cites**: [[mtp-2025-2029]] — the Tier-0 obligation as budget justification.

@@ -15,7 +15,7 @@ A **zettelkasten-style knowledge graph** on how the European Organization for Nu
 
 ## 🗺️ Map of content
 
-Nine topic hubs organize the corpus. Enter through any of them:
+Twelve topic hubs organize the corpus. Enter through any of them:
 
 **Who decides**
 
@@ -30,6 +30,9 @@ Nine topic hubs organize the corpus. Enter through any of them:
 
 **What is built**
 
+* [[storage-and-data]] — **EOS**, the tape archive **CTA** (and the **CASTOR** it replaced), **CERNBox**, and the software and data movers: **CVMFS**, **FTS**, **Rucio**.
+* [[compute-platforms]] — the **OpenStack** private cloud under 90% of the data centre, the **HTCondor** batch pool that replaced LSF, the **OpenShift** PaaS and **SWAN**.
+* [[networks]] — **LHCOPN**, **LHCONE** and the segregation between technical, campus and data-centre networks.
 * [[identity-architecture]] — the **Keycloak SSO**, the C#/.NET Authorization Service, dynamic groups (**GMS**), OIDC integration and the token claims — plus the three decisions that shaped them.
 * [[grid-federation]] — the **WLCG IAM**, VO-centred transitive trust, the Common JWT Profile, capability scopes, lifetime-based security and the **Sirtfi** and **AARC** trust frameworks.
 
@@ -40,8 +43,8 @@ Nine topic hubs organize the corpus. Enter through any of them:
 
 ## 📚 Primary sources
 
-Every factual note declares `Cites` edges to the documents that anchor it: CERN official announcements, Council documents, WLCG terms of reference, service documentation, standards and peer-reviewed papers — **48 sources** under `sources/`, each with its URL and the specific claims it supports.
+Every factual note declares `Cites` edges to the documents that anchor it: CERN official announcements, Council documents, WLCG terms of reference, service documentation, standards and peer-reviewed papers — **65 sources** under `sources/`, each with its URL and the specific claims it supports.
 
 ## 🧩 How this corpus is built
 
-Each note is atomic (one idea), typed (15 node types), and linked through a closed set of 15 relationship labels declared under a `# Topology` heading. Nodes carry a **lifecycle status**, so retired arrangements — ADFS, e-groups, the Grid Deployment Board, the v1.0 token lifetimes — stay in the graph as history rather than being silently presented as current. The graph you explore is generated from those declarations, never from incidental prose links. This repository doubles as the **reference template** for [quartz-okf](https://github.com/Zetesis-Labs/quartz-okf).
+Each note is atomic (one idea), typed (19 node types), and linked through a closed set of 19 relationship labels declared under a `# Topology` heading. Nodes carry a **lifecycle status**, so retired arrangements — ADFS, e-groups, the Grid Deployment Board, the v1.0 token lifetimes — stay in the graph as history rather than being silently presented as current. The graph you explore is generated from those declarations, never from incidental prose links. This repository doubles as the **reference template** for [quartz-okf](https://github.com/Zetesis-Labs/quartz-okf).
