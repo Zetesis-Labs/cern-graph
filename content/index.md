@@ -56,3 +56,9 @@ warning; their unverified details must not be read as established facts.
 ## 🧩 How this corpus is built
 
 Each note is atomic (one idea), typed (19 node types), and linked through a closed set of 20 relationship labels declared under a `# Topology` heading. Nodes carry a **lifecycle status**, so retired arrangements — ADFS, e-groups, the Grid Deployment Board, the v1.0 token lifetimes — stay in the graph as history rather than being silently presented as current. The graph you explore is generated from those declarations, never from incidental prose links. This repository doubles as the **reference template** for [quartz-okf](https://github.com/Zetesis-Labs/quartz-okf).
+
+---
+
+[![Zetesis — systems architecture, AI and complex problem solving](/static/zetesis-wordmark.svg)](https://zetesis.xyz)
+
+*A project by [Zetesis](https://zetesis.xyz) — systems architecture, AI and complex problem solving in production.*

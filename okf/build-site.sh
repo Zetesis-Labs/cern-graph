@@ -77,4 +77,8 @@ rm -rf "$CACHE/.quartz-cache"
 # 6. Salida a public/
 rm -rf "$REPO_ROOT/public"
 cp -R "$CACHE/public" "$REPO_ROOT/public"
+
+# 7. Badge del CERN al final del menú lateral izquierdo (post-build)
+python3 "$OKF_DIR/inject-cern-logo.py"
+
 echo "✅ [okf] Sitio de grafo construido con éxito en $REPO_ROOT/public"

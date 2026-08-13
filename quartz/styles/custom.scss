@@ -12,3 +12,27 @@
   padding-bottom: 1rem;
   margin-bottom: 2rem;
 }
+
+// Logo de Zetesis al pie de la portada
+article img[src*="zetesis-wordmark"] {
+  max-width: 240px;
+  height: auto;
+}
+
+// Badge del CERN al final del menú lateral izquierdo
+.left.sidebar .cern-badge {
+  margin-top: auto;
+  align-self: flex-start;
+  padding-top: 1rem;
+}
+
+.left.sidebar .cern-badge img {
+  width: 44px;
+  height: auto;
+  opacity: 0.75;
+  margin: 0;
+}
+
+.left.sidebar .cern-badge:hover img {
+  opacity: 1;
+}

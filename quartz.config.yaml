@@ -175,6 +175,7 @@ plugins:
     enabled: true
     options:
       links:
+        Zetesis: https://zetesis.xyz
         CERN: https://home.cern
         GitHub OKF: https://github.com/Zetesis-Labs/quartz-okf
   - source: "github:quartz-community/note-properties"
