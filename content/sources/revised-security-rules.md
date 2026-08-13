@@ -1,7 +1,7 @@
 ---
 title: "Revised computer security rules"
 type: source
-url: "https://home.cern/news/official-news/computing/revised-computer-security-rules"
+url: "https://home.cern/revised-computer-security-rules/"
 kind: official-announcement
 description: "The announcement of the Computer Security Board and its subsidiary-rule approval process."
 ---

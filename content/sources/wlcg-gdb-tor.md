@@ -1,7 +1,7 @@
 ---
 title: "WLCG Grid Deployment Board (concluded Sept 2024)"
 type: source
-url: "https://wlcg.web.cern.ch/collaboration/management/grid-deployment-board"
+url: "https://wlcg.web.cern.ch/organisation-boards/grid-deployment-board-concluded-sept-2024"
 kind: governance-document
 description: "The board that represented the resource centres, wound up in September 2024."
 ---

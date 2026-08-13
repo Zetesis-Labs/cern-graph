@@ -25,3 +25,4 @@ down-times. It is the commitment that justifies the capital expenditure — the
 * **Reached via**: [[lhcopn]] — how it distributes to the Tier-1s.
 * **Cites**: [[wlcg-tiers]] — Tier-0 responsibilities.
 * **Cites**: [[mtp-2025-2029]] — the Tier-0 obligation as budget justification.
+* **Cites**: [[wlcg-tdr-2005]] — the foundational design report.

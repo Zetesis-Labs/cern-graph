@@ -31,7 +31,7 @@ hosts the WLCG IAM instances, and carries the [[it-strategy-pillars]] into produ
 * **Runs**: [[cern-paas]] — the web platform.
 * **Runs**: [[cernbox]] — sync and share.
 * **Runs**: [[swan]] — interactive analysis.
-* **Runs**: [[indico]] — the event platform.
+* **Runs**: [[services/indico]] — the event platform.
 * **Runs**: [[landb]] — the network database.
 * **Runs**: [[monit]] — the monitoring infrastructure.
 * **Runs**: [[linux-service]] — the operating system estate.
@@ -40,7 +40,6 @@ hosts the WLCG IAM instances, and carries the [[it-strategy-pillars]] into produ
 * **Runs**: [[servicenow]] — the service management platform (jointly with General Services).
 * **Runs**: [[cern-gitlab]] — code hosting and CI.
 * **Runs**: [[cernphone]] — telephony.
-* **Runs**: [[mail-service]] — e-mail.
 * **Runs**: [[wlcg-iam]] — the IAM instances of the LHC VOs, on OpenShift.
 * **Runs**: [[zenodo]] — hosted in the CERN data centre.
 * **Publishes**: [[inveniordm]] — co-developed and released as open source.

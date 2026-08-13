@@ -19,5 +19,4 @@ programme, not to an administrative branch.
 # Topology
 
 * **Part of**: [[sector-structure-2026]]
-* **Contains**: [[it-department]]
 * **Cites**: [[management-structure-2026-part2]] — EP/TH/IT composition.

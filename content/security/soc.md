@@ -19,5 +19,4 @@ of the concrete outcomes of the [[cis-v8-audit]].
 # Topology
 
 * **Part of**: [[security-governance]]
-* **Complies with**: [[cis-v8-audit]] — its expansion came from the audit.
 * **Cites**: [[security-audited-for-the-better]] — the SOC's scope.

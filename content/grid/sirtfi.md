@@ -20,6 +20,5 @@ CERN and the WLCG — the security counterpart to [[vo-transitive-trust]].
 # Topology
 
 * **Part of**: [[grid-federation]]
-* **Governs**: [[wlcg-iam]] — participation implies the commitments.
 * **Depends on**: [[vo-transitive-trust]] — transitive trust is what creates the gap.
 * **Cites**: [[sirtfi-refeds]] — the framework's purpose.

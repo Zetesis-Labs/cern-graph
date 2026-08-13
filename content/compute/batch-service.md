@@ -23,3 +23,4 @@ the batch farm is not separate iron, it is a tenant.
 * **Runs on**: [[cern-cloud]]
 * **Supersedes**: [[lsf]]
 * **Cites**: [[batch-docs]] — HTCondor and the lxplus entry point.
+* **Cites**: [[htcondor-experience]] — the paper detailing HTCondor's distributed computing architecture.

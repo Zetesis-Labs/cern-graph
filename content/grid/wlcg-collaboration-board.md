@@ -18,5 +18,4 @@ sovereignty, exercised by those who contribute resources to it.
 # Topology
 
 * **Part of**: [[wlcg-governance]]
-* **Contains**: [[wlcg-overview-board]] — a standing committee of this board.
 * **Cites**: [[wlcg-cb-tor]] — its terms of reference.

@@ -20,6 +20,7 @@ documentation a design requirement, not good practice.
 
 # Topology
 
-* **Part of**: [[topics/governance-structure]]
+* **Part of**: [[governance-structure]]
+* **Catalogued in**: [[service-catalogue]]
 * **Cites**: [[edms-service]] — scope, lifecycle management and integrations.
 * **Cites**: [[edms-6]] — the current generation.

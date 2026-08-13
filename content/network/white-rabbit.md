@@ -24,3 +24,4 @@ open-hardware strategy paying off outside the laboratory.
 * **Part of**: [[networks]]
 * **Complies with**: [[cern-ohl]] — released under CERN's own hardware licence.
 * **Cites**: [[white-rabbit-site]] — design, origin and the IEEE 1588-2019 profile.
+* **Cites**: [[ieee-1588-2019]] — the precision time protocol standard.

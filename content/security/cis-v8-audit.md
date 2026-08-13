@@ -1,13 +1,12 @@
 ---
-title: "The CIS v8 audit (2023)"
-type: standard
+title: "Findings of the CIS v8 audit (2023)"
+type: concept
 entorno: corporate
-status: current
 tags: [security, audit]
-description: "82 recommendations, 73 accepted: the audit that ended implicit trust."
+description: "82 recommendations, 73 accepted: the assessment that challenged implicit trust."
 ---
 
-# The CIS v8 audit (2023)
+# Findings of the CIS v8 audit (2023)
 
 Summer 2023: an external firm measured CERN against **CIS Controls v8** as part of the
 five-yearly internal audit plan. Result: **82 recommendations, 73 accepted** by the
@@ -20,7 +19,9 @@ secure-by-design, and most of the modern control set descends from it.
 # Topology
 
 * **Part of**: [[security-governance]]
-* **Governs**: [[secure-sdlc]] — SAST/DAST, SBOM and WAF come from its recommendations.
-* **Governs**: [[mfa-rollout]] — 2FA for all accounts, likewise.
-* **Governs**: [[password-policy]] — strengthened authentication, likewise.
+* **About**: [[cis-controls-v8]] — the framework used as the audit baseline.
+* **About**: [[secure-sdlc]] — SAST/DAST, SBOM and WAF appear in its recommendations.
+* **About**: [[mfa-rollout]] — 2FA for all accounts appears in its recommendations.
+* **About**: [[password-policy]] — strengthened authentication appears in its recommendations.
 * **Cites**: [[security-audited-for-the-better]] — CERN's own account, with the numbers.
+* **Cites**: [[cis-controls-v8-source]] — the standard specification of the controls.

@@ -17,5 +17,3 @@ the monitoring in — and [[ggus]] bridging the grid's own ticketing into all of
 ---
 
 # Topology
-
-* **Part of**: [[topics/governance-structure]]

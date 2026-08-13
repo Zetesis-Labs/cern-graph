@@ -2,7 +2,7 @@
 title: "Data Privacy at CERN"
 type: source
 url: "https://privacy.web.cern.ch/"
-kind: technical-docs
+kind: governance-document
 description: "The Office of Data Privacy: CERN's centre of expertise on personal data."
 ---
 

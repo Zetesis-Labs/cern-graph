@@ -187,7 +187,9 @@ plugins:
         - description
         - url
         - kind
+        - entorno
         - status
+        - map_url
         - tags
         - aliases
       excludedProperties: []

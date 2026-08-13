@@ -64,21 +64,31 @@ export const profile = {
     "Cites",         // Grounding: note → primary source that anchors its claims
   ],
   // Domain relations are mirrored so both panels read naturally. Following the
-  // Typed Topology base profile, "Depends on", "About" and "Cites" have no
-  // mirror: they surface on the target through inbound-edge views instead.
+  // Typed Topology base profile, knowledge relations and a few directional
+  // infrastructure relations have no mirror: targets expose them as inbound edges.
   inverseLabels: {
     "Governs": "Supervised by",
+    "Supervised by": "Governs",
     "Advises": "Advised by",
+    "Advised by": "Advises",
     "Funds": "Funded by",
+    "Funded by": "Funds",
     "Runs": "Run by",
+    "Run by": "Runs",
     "Authenticates": "Authenticated by",
+    "Authenticated by": "Authenticates",
     "Authorizes": "Authorized by",
+    "Authorized by": "Authorizes",
     "Complies with": "Applies to",
+    "Applies to": "Complies with",
     "Integrates": "Integrated into",
+    "Integrated into": "Integrates",
     "Publishes": "Published by",
+    "Published by": "Publishes",
     "Catalogued in": "Catalogues",
     "Catalogues": "Catalogued in",
     "Supersedes": "Superseded by",
+    "Superseded by": "Supersedes",
     "Part of": "Contains",
     "Contains": "Part of",
     "Runs on": "Hosts",

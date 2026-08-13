@@ -1,14 +1,16 @@
 ---
-title: "EDMS 6 now available"
+title: "CERN Bulletin: EDMS 6"
 type: source
-url: "https://home.cern/news/news/engineering/edms-6-now-available"
+url: "https://cds.cern.ch/record/1697687/files/2014-18-19-E-web.pdf"
 kind: official-announcement
-description: "The current generation of the engineering data platform."
+description: "CERN's 2014 Bulletin issue announcing EDMS 6."
 ---
 
-# EDMS 6 now available
+# CERN Bulletin: EDMS 6
 
-CERN's announcement of EDMS 6.
+CERN's Bulletin issue announcing the sixth generation of the platform.
+
+The announcement details the major release of version 6 of the Engineering Data Management Service platform. It highlights improvements to user interface workflows, search capabilities, and integration with engineering CAD systems and equipment management databases. This upgrade reflects ongoing institutional investment to preserve critical technical documentation across multi-decade accelerator lifecycles.
 
 ## What it anchors
 

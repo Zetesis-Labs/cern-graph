@@ -1,25 +1,22 @@
 ---
-title: "The mail service"
-type: service
+title: "The planned Kopano mail migration (2019)"
+type: decision
 entorno: corporate
-status: current
 tags: [collaboration]
-description: "40,000 mailboxes moved off Exchange onto Kopano."
+description: "The 2019 plan to move 40,000 mailboxes from Exchange to Kopano."
 ---
 
-# The mail service
+# The planned Kopano mail migration (2019)
 
-One of MALT's first tangible outcomes and its hardest: migrating around **40,000
-mailboxes and 50–60 TB** from Microsoft Exchange to the open-source **Kopano**, chosen
-after market research, evaluation and proofs of concept, and backed by a support
-contract with the vendor. Mail is the service where "avoid vendor lock-in" stops being
-a principle and becomes a project plan.
+One of MALT's first major migration plans was to move around **40,000 mailboxes and
+50–60 TB** from Microsoft Exchange to the open-source **Kopano**, selected after market
+research, evaluation and proofs of concept. The cited 2019 presentation documents the
+target and selection process, not completion of the migration or the mail platform
+currently in production.
 
 ---
 
 # Topology
 
-* **Part of**: [[open-collaboration]]
 * **Part of**: [[malt]]
-* **Catalogued in**: [[service-catalogue]]
 * **Cites**: [[cern-email-migration]] — the scale and the selection process.

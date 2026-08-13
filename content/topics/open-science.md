@@ -12,3 +12,7 @@ The product of all this computing is knowledge, and [[open-science-mandate]] man
 giving it away. The platforms: [[inveniordm]] as the engine, [[zenodo]] as the global
 service, [[cds-repository-cern]] as the institutional memory — with
 [[invenio-framework-distinction]] keeping the three straight.
+
+---
+
+# Topology

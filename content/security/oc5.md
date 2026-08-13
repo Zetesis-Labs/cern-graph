@@ -21,5 +21,4 @@ blocking. Detail lives in the [[subsidiary-rules]].
 * **Part of**: [[security-governance]]
 * **Governs**: [[cern-sso]] — how the laboratory authenticates.
 * **Governs**: [[gms]] — how memberships are granted and audited.
-* **Contains**: [[subsidiary-rules]]
 * **Cites**: [[oc5-computing-rules]] — the rules index.

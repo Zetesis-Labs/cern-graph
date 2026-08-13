@@ -9,9 +9,9 @@ description: "The batch system CERN outgrew."
 
 # LSF
 
-IBM Platform LSF ran the CERN batch farm for years and was progressively replaced by
-the HTCondor-based [[batch-service]]. Its retirement is a scaling story rather than a
-licensing one: the architecture had ceilings that CERN's growth eventually hit.
+IBM Platform LSF ran the CERN batch farm before the current HTCondor-based
+[[batch-service]]. The cited public batch documentation establishes the current
+platform; it does not document the detailed migration chronology or rationale.
 
 ---
 

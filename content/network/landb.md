@@ -20,6 +20,5 @@ that rots. Registration is what makes it possible to hold ~200,000 devices accou
 # Topology
 
 * **Part of**: [[networks]]
-* **Governs**: [[cern-firewall-service]] — openings are granted against LanDB entries.
 * **Cites**: [[landb-docs]] — registration and sets.
 * **Cites**: [[it-communication-systems]] — LanDB and the network portal.

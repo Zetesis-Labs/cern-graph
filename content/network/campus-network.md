@@ -20,5 +20,6 @@ which the technical network must be protected.
 # Topology
 
 * **Part of**: [[networks]]
+* **Uses**: [[ipv6]] — dual-stack addressing.
 * **Cites**: [[it-communication-systems]] — the network estate.
 * **Cites**: [[cern-wifi]] — CERN-Campus and eduroam.

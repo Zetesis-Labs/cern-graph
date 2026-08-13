@@ -19,6 +19,6 @@ capable replacement able to inspect far higher traffic volumes.
 # Topology
 
 * **Part of**: [[networks]]
-* **Complies with**: [[cis-v8-audit]]
+* **Uses**: [[landb]] — firewall openings are tied to registered network objects.
 * **Cites**: [[cern-firewall]] — the service description.
 * **Cites**: [[security-audited-for-the-better]] — the planned upgrades.

@@ -1,17 +1,17 @@
 ---
-title: "Global open access initiative SCOAP3 set to continue"
+title: "SCOAP3 journals and transparent costs (2025–2027)"
 type: source
-url: "https://home.cern/news/news/cern/global-open-access-initiative-scoap3-set-continue"
-kind: official-announcement
-description: "SCOAP3's scale, funding model and governance, hosted at CERN."
+url: "https://scoap3.org/journals-2025-2027/"
+kind: technical-docs
+description: "SCOAP3's current journal programme, funding model and phase totals."
 ---
 
-# Global open access initiative SCOAP3 set to continue
+# SCOAP3 journals and transparent costs (2025–2027)
 
-CERN's announcement on the continuation of SCOAP3.
+The consortium's current account of its journal contracts and expenditure.
 
 ## What it anchors
 
-* A partnership of **over 3,000 libraries, funding agencies and research organisations from 44 countries**, hosted at CERN under international governance.
-* Funded by **redirecting library subscription budgets** into open access publishing, rather than new money.
-* Over 70,000 articles published open access across 11 particle physics journals; an Open Science Mechanism financially incentivising publishers' open-science practices from January 2025.
+* SCOAP3 centrally pays publishers from a common fund contributed by libraries, consortia, research institutions and funding agencies.
+* Its published phase totals exceed 70,000 funded articles through the end of 2024.
+* The 2025–2027 contracts include an Open Science mechanism that adjusts compensation according to publishers' practices.

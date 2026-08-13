@@ -23,7 +23,6 @@ with another, build on open protocols and keep the backend at home.
 
 # Topology
 
-* **Part of**: [[open-collaboration]]
 * **Part of**: [[malt]]
 * **Catalogued in**: [[service-catalogue]]
 * **Supersedes**: [[legacy-telephony]]

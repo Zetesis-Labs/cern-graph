@@ -20,7 +20,7 @@ scales out to Spark or to the [[batch-service]] through Dask. It also reaches
 # Topology
 
 * **Part of**: [[compute-platforms]]
-* **Backed by**: [[cernbox]]
+* **Uses**: [[cernbox]] — notebook home directories.
 * **Uses**: [[cvmfs]] — software environments.
 * **Uses**: [[batch-service]] — scale-out through Dask/HTCondor.
 * **Uses**: [[rucio]] — dataset discovery.

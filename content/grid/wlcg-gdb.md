@@ -1,5 +1,5 @@
 ---
-title: "Grid Deployment Board (1974–2024)"
+title: "Grid Deployment Board (concluded 2024)"
 type: committee
 entorno: scientific-grid
 status: superseded
@@ -7,7 +7,7 @@ tags: [grid, governance]
 description: "The voice of the resource centres, wound up in September 2024."
 ---
 
-# Grid Deployment Board (1974–2024)
+# Grid Deployment Board (concluded 2024)
 
 The GDB represented the **resource centres** — the sites that actually run the
 hardware — and its chair sat ex officio on the Management Board to carry their

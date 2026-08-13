@@ -11,7 +11,7 @@ description: "The INDIGO IAM instances for the LHC experiments, hosted by CERN I
 # WLCG IAM
 
 The token issuers of the grid: **INDIGO IAM** instances (software by INFN) for ALICE,
-ATLAS, CMS, LHCb and other CERN-based VOs, hosted by CERN IT on OpenShift. They manage
+ATLAS, CMS, LHCb and other CERN-based VOs, hosted by CERN IT. They manage
 VO membership, issue WLCG tokens for user and service workflows, and still provide
 VOMS proxies while the long tail needs them. Users reach them through the CERN SSO,
 eduGAIN or institutional identity providers.
