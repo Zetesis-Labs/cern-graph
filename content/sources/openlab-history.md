@@ -2,7 +2,7 @@
 title: "CERN openlab — our history"
 type: source
 url: "https://openlab.cern/our-history"
-kind: technical-docs
+kind: official-announcement
 description: "The public-private partnership's phase structure and competence centres."
 ---
 

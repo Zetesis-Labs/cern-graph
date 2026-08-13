@@ -63,12 +63,13 @@ fi
 # El explorador carga D3 desde /static y no lo trae el toolkit: sin esta copia el
 # lienzo del grafo queda en blanco con un "d3 is not defined" en consola.
 mkdir -p "$CACHE/quartz/static"
-cp -R "$REPO_ROOT/quartz/static/." "$CACHE/quartz/static/" 2>/dev/null || true
+if [ -d "$REPO_ROOT/quartz/static" ]; then
+  cp -R "$REPO_ROOT/quartz/static/." "$CACHE/quartz/static/"
+fi
 
 # 5. Compilar sitio web estático
 rm -rf "$CACHE/.quartz/plugins/quartz-okf" "$CACHE/.quartz/plugins/quartz-okf-explorer" "$CACHE/.quartz/plugins/quartz-okf-panels"
 # La caché de transpilación no invalida al parchear las fuentes de los plugins.
-rm -rf "$CACHE/.quartz-cache"
 rm -rf "$CACHE/.quartz-cache"
 
 (cd "$CACHE" && npx quartz plugin install --from-config --concurrency 2 && npx quartz build --concurrency 1)

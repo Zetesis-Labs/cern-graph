@@ -19,6 +19,5 @@ replaced.
 
 # Topology
 
-* **Part of**: [[open-collaboration]]
 * **Part of**: [[malt]]
 * **Cites**: [[mattermost-cern]] — adoption and integrations.

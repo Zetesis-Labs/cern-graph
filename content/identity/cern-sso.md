@@ -10,8 +10,9 @@ description: "The Keycloak-based Single Sign-On: one login for the whole campus.
 
 # CERN SSO
 
-The corporate authentication service: **Keycloak on Kubernetes**, on-premise, serving
-~9,000 applications and ~150,000 potential identities at ~100 logins per minute.
+The corporate authentication service: **Keycloak on Kubernetes**, on-premise. Figures
+reported in November 2022 put its scale at ~9,000 applications, ~150,000 potential
+identities and ~100 logins per minute.
 It authenticates; it deliberately does not decide permissions — that belongs to
 [[gms]] and the [[authorization-service-api]].
 

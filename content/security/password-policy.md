@@ -20,3 +20,4 @@ breach-exposed ("burnt") passwords. Non-compliant passwords across every account
 
 * **Part of**: [[security-governance]]
 * **Cites**: [[password-policy-nist]] — the policy change.
+* **Cites**: [[nist-sp-800-63b]] — the digital identity guidelines driving the policy.

@@ -19,6 +19,7 @@ constraint under which HL-LHC computing models must be designed.
 
 # Topology
 
-* **Part of**: [[topics/governance-structure]]
+* **Part of**: [[governance-structure]]
 * **Governs**: [[prevessin-computing-centre]]
 * **Cites**: [[environment-report-4]] — the objectives and the ISO 50001 certification.
+* **Cites**: [[iso-50001]] — the energy management standard.

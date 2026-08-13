@@ -21,6 +21,6 @@ pipeline requirements land here, not in the abstract.
 
 * **Part of**: [[compute-platforms]]
 * **Runs on**: [[cern-cloud]]
-* **Complies with**: [[cis-v8-audit]] — SAST/DAST run in its pipelines.
 * **Cites**: [[gitlab-at-cern]] — scale and adoption.
 * **Cites**: [[gitlab-runners-k8s]] — the CI runners on Kubernetes.
+* **Cites**: [[security-audited-for-the-better]] — the SAST/DAST recommendation.

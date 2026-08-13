@@ -1,9 +1,9 @@
 ---
 title: "Networks"
 type: topic
-entorno: scientific-grid
+entorno: cross-cutting
 tags: [network]
-description: "Hub: the dedicated connectivity the grid depends on."
+description: "Hub: campus, technical and federated connectivity across CERN and WLCG."
 ---
 
 # Networks
@@ -16,5 +16,3 @@ the accelerator's technical network apart from the campus.
 ---
 
 # Topology
-
-* **Part of**: [[topics/governance-structure]]

@@ -9,7 +9,8 @@ description: "Provider, Optimiser, Pioneer, Connector: what the IT department is
 
 # The four pillars of the IT strategy
 
-The 2022–2025 strategy defines the department by four roles: **Provider** (stable,
+The 2022–2025 strategy formulated four roles that CERN's current IT vision page
+continues to publish: **Provider** (stable,
 cost-competitive common services), **Optimiser** (consolidate, kill redundancy, retire
 technical debt), **Pioneer** (computing models for HL-LHC and FCC), **Connector**
 (open-source collaboration and impact — openlab, Open Science). Everything the

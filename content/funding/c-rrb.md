@@ -19,5 +19,5 @@ and reports to it, and the process runs on a spring/autumn cycle anchored in the
 # Topology
 
 * **Part of**: [[resource-funding]]
-* **Funds**: [[tier-model]] — allocations land on the tiers.
+* **About**: [[tier-model]] — it reviews resource requirements and pledges across the tiers.
 * **Cites**: [[wlcg-crsg]] — the C-RRB/CRSG relationship.

@@ -16,5 +16,3 @@ a notebook that reaches all of it.
 ---
 
 # Topology
-
-* **Part of**: [[topics/governance-structure]]

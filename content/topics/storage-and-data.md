@@ -17,5 +17,3 @@ principle underneath: [[disk-tape-tiering]].
 ---
 
 # Topology
-
-* **Part of**: [[topics/governance-structure]]

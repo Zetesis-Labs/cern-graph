@@ -22,3 +22,4 @@ are not entitled to does not fail: the server silently issues the token without 
 * **About**: [[wlcg-token-profile]]
 * **Cites**: [[wlcg-jwt-profile]] — the scope definitions.
 * **Cites**: [[osg-requesting-tokens]] — the group-gating policy in practice.
+* **Cites**: [[openid-connect-core]] — the standard underlying capability-based scopes.

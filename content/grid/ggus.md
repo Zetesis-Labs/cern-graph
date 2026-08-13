@@ -20,7 +20,7 @@ replaced by a next-generation helpdesk — a succession in progress.
 
 # Topology
 
-* **Part of**: [[wlcg-governance]]
+* **Part of**: [[service-management]]
 * **Integrates**: [[servicenow]] — the GGUS–SNow bridge.
 * **Cites**: [[ggus-site]] — the system and its role since 2007.
 * **Cites**: [[ggus-snow-bridge]] — the bridge, in operational use.

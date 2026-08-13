@@ -21,3 +21,4 @@ OAuth2/OIDC flows. The same protocol substrate carries the scientific federation
 * **Part of**: [[identity-architecture]]
 * **Integrates**: [[wlcg-iam]] — the grid speaks the same protocol.
 * **Cites**: [[oidc-config-docs]] — endpoints and configuration.
+* **Cites**: [[openid-connect-core]] — the core specification for the identity layer.

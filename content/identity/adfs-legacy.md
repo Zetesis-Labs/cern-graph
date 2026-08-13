@@ -1,13 +1,13 @@
 ---
-title: "ADFS (2008–2023)"
+title: "ADFS (legacy)"
 type: service
 entorno: corporate
 status: superseded
 tags: [identity]
-description: "The Microsoft federation service CERN ran for fifteen years."
+description: "The Microsoft federation service that preceded CERN's Keycloak SSO."
 ---
 
-# ADFS (2008–2023)
+# ADFS (legacy)
 
 From 2008, CERN's web SSO was **Active Directory Federation Services**, with Active
 Directory resolving identities behind it. It worked — until the customisations layered

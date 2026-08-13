@@ -21,6 +21,6 @@ on purpose.
 # Topology
 
 * **Part of**: [[service-management]]
-* **Runs on**: [[servicenow]] — both are portal features.
+* **Integrates**: [[servicenow]] — both are exposed through the service-management portal.
 * **Cites**: [[ssb]] — types and impact levels.
 * **Cites**: [[sls]] — the availability dashboard and its lineage.

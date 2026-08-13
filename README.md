@@ -39,7 +39,7 @@ cern-it-governance-graph/
 ## 🚀 Quick Start
 
 ### Prerequisites
-* **Node.js ≥ 20**
+* **Node.js ≥ 22**
 * **Bash**, **curl** and **tar**
 
 ### 1. Preview / Build the Site

@@ -21,6 +21,7 @@ hardware with disks in JBOD.
 # Topology
 
 * **Part of**: [[storage-and-data]]
+* **Supersedes**: [[afs]]
 * **Uses**: [[xrootd]] — its remote access protocol.
 * **Cites**: [[afs-phaseout-paper]] — it absorbed AFS's live-data role.
 * **Cites**: [[eos-docs]] — architecture and access methods.

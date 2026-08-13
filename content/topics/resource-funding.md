@@ -12,3 +12,7 @@ Capacity is not decreed, it is negotiated. The experiments request; the
 [[crsg]] scrutinises; the [[c-rrb]] decides; and at CERN's own level the
 [[medium-term-plan]] is where the Council turns strategy into budget — the instrument
 that paid for [[prevessin-computing-centre]].
+
+---
+
+# Topology

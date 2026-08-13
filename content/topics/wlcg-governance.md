@@ -11,6 +11,12 @@ description: "Hub: the collaboration's own constitution, separate from CERN's."
 The grid is not governed by CERN: it is governed by **its signatories**. The
 [[wlcg-mou-agreement]] binds funding agencies to deliver resources; the
 [[wlcg-collaboration-board]] is the assembly, the [[wlcg-overview-board]] its standing
-committee, the [[wlcg-management-board]] the executive, and the [[wlcg-gdb]] represented
-the resource centres until it wound up in 2024. What the whole thing coordinates is
-the [[tier-model]], built on top of [[cern-tier0]].
+committee, and the [[wlcg-management-board]] the executive. The [[wlcg-gdb]] represented
+the resource centres until it wound up in 2024; the
+[[wlcg-technical-coordination-board]] now steers technical evolution through an open
+forum. What the whole thing coordinates is the [[tier-model]], built on top of
+[[cern-tier0]].
+
+---
+
+# Topology

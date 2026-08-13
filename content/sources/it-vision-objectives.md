@@ -2,7 +2,7 @@
 title: "IT Department Vision and Objectives"
 type: source
 url: "https://information-technology.web.cern.ch/about/it-department-vision-and-objectives"
-kind: technical-docs
+kind: policy-document
 description: "The department's own statement of its pillars and organisational groups."
 ---
 

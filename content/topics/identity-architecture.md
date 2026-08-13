@@ -14,3 +14,7 @@ to do, and [[oidc-integration]] carries the result to every application as [[cer
 The shape of the system is explained by three decisions: [[decision-leave-adfs]],
 [[decision-onprem-sso]] and [[sso-performance-hardening]], held together by
 [[authn-authz-decoupling]].
+
+---
+
+# Topology

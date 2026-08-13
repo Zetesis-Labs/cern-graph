@@ -1,6 +1,7 @@
 ---
 title: "IT Governance and Identity Architecture (CERN)"
-type: portal
+type: topic
+entorno: cross-cutting
 description: "An atomic, source-grounded knowledge graph on technology governance, cybersecurity and identity at CERN."
 ---
 
@@ -15,7 +16,7 @@ A **zettelkasten-style knowledge graph** on how the European Organization for Nu
 
 ## 🗺️ Map of content
 
-Twelve topic hubs organize the corpus. Enter through any of them:
+Thirteen topic hubs organize the corpus. Enter through any of them:
 
 **Who decides**
 
@@ -41,12 +42,17 @@ Twelve topic hubs organize the corpus. Enter through any of them:
 **What is shared**
 
 * [[open-science]] — the 2022 **Open Science Policy** and the Invenio family: InvenioRDM, Zenodo, and the CDS migration.
-* [[open-collaboration]] — **MALT** and what it delivered (**Mattermost**, the **Kopano** mail migration, **CERNphone** with its own SIP backend), plus **CERN openlab**, **SCOAP3**, the **CERN Open Hardware Licence** and the **Quantum Technology Initiative**.
+* [[open-collaboration]] — **MALT** and its outcomes and migration plans (**Mattermost**, the planned **Kopano** mail migration, **CERNphone** with its own SIP backend), plus **CERN openlab**, **SCOAP3**, the **CERN Open Hardware Licence** and the **Quantum Technology Initiative**.
 
 ## 📚 Primary sources
 
-Every factual note declares `Cites` edges to the documents that anchor it: CERN official announcements, Council documents, WLCG terms of reference, service documentation, standards and peer-reviewed papers — **100 sources** under `sources/`, each with its URL and the specific claims it supports.
+Verified factual notes declare `Cites` edges to the documents that anchor them:
+CERN official announcements, Council documents, WLCG terms of reference, service
+documentation, standards and peer-reviewed papers — **118 sources** under
+`sources/`, each with its URL and the specific claims it supports. Notes tagged
+`needs-primary-source` are retained as research leads and display an explicit
+warning; their unverified details must not be read as established facts.
 
 ## 🧩 How this corpus is built
 
-Each note is atomic (one idea), typed (19 node types), and linked through a closed set of 19 relationship labels declared under a `# Topology` heading. Nodes carry a **lifecycle status**, so retired arrangements — ADFS, e-groups, the Grid Deployment Board, the v1.0 token lifetimes — stay in the graph as history rather than being silently presented as current. The graph you explore is generated from those declarations, never from incidental prose links. This repository doubles as the **reference template** for [quartz-okf](https://github.com/Zetesis-Labs/quartz-okf).
+Each note is atomic (one idea), typed (19 node types), and linked through a closed set of 20 relationship labels declared under a `# Topology` heading. Nodes carry a **lifecycle status**, so retired arrangements — ADFS, e-groups, the Grid Deployment Board, the v1.0 token lifetimes — stay in the graph as history rather than being silently presented as current. The graph you explore is generated from those declarations, never from incidental prose links. This repository doubles as the **reference template** for [quartz-okf](https://github.com/Zetesis-Labs/quartz-okf).

@@ -77,7 +77,7 @@ jobs:
       # Idempotente: si el proyecto ya existe, el comando falla y se ignora.
       - name: Asegurar que el proyecto de Pages existe
         run: >-
-          npx --yes wrangler@latest pages project create cern-it-governance-graph
+          npx --yes wrangler@^3 pages project create cern-it-governance-graph
           --production-branch main
           || echo "el proyecto ya existía"
         env:
@@ -86,7 +86,7 @@ jobs:
 
       - name: Deploy a Cloudflare Pages
         run: >-
-          npx --yes wrangler@latest pages deploy public
+          npx --yes wrangler@^3 pages deploy public
           --project-name cern-it-governance-graph
           --branch main
           --commit-dirty=true

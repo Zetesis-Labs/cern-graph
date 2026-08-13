@@ -12,3 +12,10 @@ How an intergovernmental laboratory turns 25 Member States into executable IT de
 The chain runs: [[cern-council]] → [[sector-structure-2026]] → [[rcs-sector]] → [[it-department]],
 advised by [[spc-and-finance-committees]] and [[saca]], with the [[cio-role]] extracted
 above the operational line and the [[it-strategy-pillars]] framing what the department is for.
+
+---
+
+# Topology
+
+This is one of the top-level topic hubs; its children declare their own `Part of`
+relationships.

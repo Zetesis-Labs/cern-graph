@@ -20,7 +20,7 @@ them. Strategy stops competing with uptime for the same person's attention.
 
 # Topology
 
-* **Part of**: [[sector-structure-2026]]
+* **Part of**: [[governance-structure]]
 * **Governs**: [[it-department]] — sets the policy frame the department executes.
 * **Cites**: [[senior-leadership-whos-who]] — the appointment and its wording.
 * **Cites**: [[management-structure-2026-part1]] — the role's creation.

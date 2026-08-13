@@ -2,7 +2,7 @@
 title: "GitLab adoption growing at CERN"
 type: source
 url: "https://about.gitlab.com/blog/gitlab-adoption-growing-at-cern"
-kind: technical-docs
+kind: press-article
 description: "The scale of CERN's self-hosted GitLab and how fast it was adopted."
 ---
 

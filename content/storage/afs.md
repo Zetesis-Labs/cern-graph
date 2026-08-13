@@ -4,7 +4,7 @@ type: datastore
 entorno: corporate
 status: superseded
 tags: [storage]
-description: "The distributed filesystem that held CERN together, switched off before Run 3."
+description: "The distributed filesystem whose phase-out targeted completion before Run 3."
 ---
 
 # AFS

@@ -10,8 +10,9 @@ description: "SAST/DAST in GitLab, SBOMs, and WAFs at the platform edge."
 
 What a developer now meets on the way to production: static and dynamic analysis
 (SAST/DAST) wired into GitLab CI/CD; software bills of materials (SBOM) and container
-scanning for supply-chain traceability; ModSecurity/Falco web application firewalls on
-the PaaS edge — with the WAF tightening and finer DoS protections scheduled for 2026.
+scanning for supply-chain traceability; a ModSecurity web application firewall and
+Falco runtime threat detection on the PaaS edge — with WAF tightening and finer DoS
+protections scheduled for 2026.
 The SOC watches the rest, ingesting Google Workspace, Azure and network logs.
 
 ---

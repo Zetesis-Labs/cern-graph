@@ -20,6 +20,5 @@ SRS (Bassler) faces the Member States; and [[rcs-sector]] holds the science — 
 # Topology
 
 * **Part of**: [[governance-structure]]
-* **Contains**: [[cio-role]] — the structure's genuinely new invention.
 * **Cites**: [[management-structure-2026-part1]] — the announcement of the five sectors.
 * **Cites**: [[senior-leadership-whos-who]] — the full roster.
