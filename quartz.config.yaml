@@ -6,9 +6,9 @@ configuration:
   enablePopovers: true
   analytics: null
   locale: en-US
-  # Dominio del despliegue en Cloudflare Pages: de él dependen los enlaces
-  # absolutos, el sitemap y el RSS. Cámbialo si se pone un dominio propio.
-  baseUrl: cern-it-governance-graph.pages.dev
+  # Dominio canónico de Cloudflare Pages: de él dependen los enlaces absolutos,
+  # el sitemap y el RSS. El subdominio *.pages.dev permanece como fallback.
+  baseUrl: cern.zetesis.xyz
   ignorePatterns:
     - private
     - templates
