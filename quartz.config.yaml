@@ -4,7 +4,10 @@ configuration:
   pageTitleSuffix: " · OKF Graph"
   enableSPA: true
   enablePopovers: true
-  analytics: null
+  analytics:
+    provider: umami
+    websiteId: 0dc104b8-0143-4bc7-9ef4-3a1a69a7fe74
+    host: https://analytics.zetesis.xyz
   locale: en-US
   # Dominio canónico de Cloudflare Pages: de él dependen los enlaces absolutos,
   # el sitemap y el RSS. El subdominio *.pages.dev permanece como fallback.
