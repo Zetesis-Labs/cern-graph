@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: umami
     websiteId: your-cern-umami-website-id
-    host: https://cloud.umami.is
+    host: https://ciceron.zetesis.xyz
   locale: en-US
   # Dominio canónico de Cloudflare Pages: de él dependen los enlaces absolutos,
   # el sitemap y el RSS. El subdominio *.pages.dev permanece como fallback.
