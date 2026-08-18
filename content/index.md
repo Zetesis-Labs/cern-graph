@@ -10,7 +10,7 @@ description: "An atomic, source-grounded knowledge graph on technology governanc
 A **zettelkasten-style knowledge graph** on how the European Organization for Nuclear Research governs its information technology: atomic notes — one idea each — densely linked with typed relationships, and every claim anchored to a **primary source** that lives in the graph as a first-class node.
 
 > [!tip] Explore it as a graph
-> Open the **[interactive graph](/static/explorer)** and switch modes: the chain of authority, the identity stack, what is still in force, the compliance map — or *Primary sources*, which shows exactly which documents this corpus stands on.
+> Open the **<a href="/static/explorer" data-router-ignore>interactive graph</a>** and switch modes: the chain of authority, the identity stack, what is still in force, the compliance map — or *Primary sources*, which shows exactly which documents this corpus stands on.
 
 ---
 
