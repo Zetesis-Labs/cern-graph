@@ -65,7 +65,11 @@ cp -R "$REPO_ROOT/content" "$CACHE/content"
 # grafo (okf-federation/). El sitio resultante es autosuficiente: en runtime no depende
 # de ningún otro sitio.
 rm -rf "$CACHE/okf-federation"
-node "$TOOLKIT/core/bin/okf-federate.js" "$REPO_ROOT" "$CACHE/content" "$CACHE/okf-federation" --cache "$CACHE_ROOT/federation"
+if [ -f "$TOOLKIT/core/bin/okf-federate.js" ]; then
+  node "$TOOLKIT/core/bin/okf-federate.js" "$REPO_ROOT" "$CACHE/content" "$CACHE/okf-federation" --cache "$CACHE_ROOT/federation"
+else
+  echo "[okf] federation: el toolkit fijado no trae okf-federate; no se monta ningún subgrafo"
+fi
 
 mkdir -p "$CACHE/quartz/styles"
 if [ -f "$REPO_ROOT/quartz/styles/custom.scss" ]; then
