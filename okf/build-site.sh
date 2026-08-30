@@ -60,6 +60,13 @@ cp -R "$TOOLKIT/plugins/quartz-okf-panels" "$CACHE/quartz-okf-panels"
 rm -rf "$CACHE/content"
 cp -R "$REPO_ROOT/content" "$CACHE/content"
 
+# 4b. Montar los subgrafos federados: el bundle de cada corpus hijo, fijado por commit en
+# okf.config.mjs, se exporta con el toolkit y se copia bajo content/<id>/ junto con su
+# grafo (okf-federation/). El sitio resultante es autosuficiente: en runtime no depende
+# de ningún otro sitio.
+rm -rf "$CACHE/okf-federation"
+node "$TOOLKIT/core/bin/okf-federate.js" "$REPO_ROOT" "$CACHE/content" "$CACHE/okf-federation" --cache "$CACHE_ROOT/federation"
+
 mkdir -p "$CACHE/quartz/styles"
 if [ -f "$REPO_ROOT/quartz/styles/custom.scss" ]; then
   cp "$REPO_ROOT/quartz/styles/custom.scss" "$CACHE/quartz/styles/custom.scss"
