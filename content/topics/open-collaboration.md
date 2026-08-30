@@ -1,6 +1,7 @@
 ---
 title: "Open collaboration"
 type: topic
+visibility: open
 entorno: cross-cutting
 tags: [open-science, collaboration]
 description: "Hub: the programmes through which CERN builds with others."

@@ -126,6 +126,20 @@ export const profile = {
           enum: ["current", "superseded", "planned"] },
       ],
     },
+    // What a broader CERN graph may preview of this one. A parent site federates only
+    // the notes marked open; everything else stays reachable but not previewed.
+    {
+      id: "visibility",
+      label: "Visibility",
+      rule: "visibility-valid",
+      appliesTo: ["committee", "role", "unit", "policy", "standard", "agreement", "service",
+                  "datastore", "cluster", "network", "technology", "platform", "facility",
+                  "protocol", "programme", "concept", "decision", "topic"],
+      fields: [
+        { source: "visibility", graphPath: ["visibility"], type: "string",
+          enum: ["open", "internal"] },
+      ],
+    },
     // Provenance of a source note: the URL is the identity of the source, and the
     // kind separates what the institution decrees from what its teams document.
     {
@@ -141,7 +155,7 @@ export const profile = {
       ],
     },
   ],
-  ruleLevels: {},
+  ruleLevels: { "visibility-valid": "error" },
 }
 
 export const explorer = {

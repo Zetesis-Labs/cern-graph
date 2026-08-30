@@ -1,6 +1,7 @@
 ---
 title: "Funding the computing"
 type: topic
+visibility: open
 entorno: cross-cutting
 tags: [governance, funding]
 description: "Hub: how computing capacity is requested, scrutinised and paid for."

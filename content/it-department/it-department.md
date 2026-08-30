@@ -1,6 +1,7 @@
 ---
 title: "IT Department"
 type: unit
+visibility: open
 entorno: corporate
 status: current
 tags: [governance, it]

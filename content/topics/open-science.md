@@ -1,6 +1,7 @@
 ---
 title: "Open science"
 type: topic
+visibility: open
 entorno: scientific-grid
 tags: [open-science]
 description: "Hub: the mandate to publish and the platforms that implement it."

@@ -18,6 +18,11 @@ TOOLKIT="$CACHE_ROOT/toolkit-${TOOLKIT_REF}"
 
 export npm_config_cache="$CACHE_ROOT/npm-cache"
 
+# El grafo publica el commit del corpus (source_head): Quartz compila desde una copia
+# fuera del repo, así que se le pasa por el entorno. Los padres que federan lo usan para
+# fijar (pin) la versión del hijo y avisar cuando se mueve.
+export OKF_SOURCE_HEAD="$(git -C "$REPO_ROOT" rev-parse HEAD 2>/dev/null || echo unknown)"
+
 # 1. Toolkit fijado por SHA
 if [ ! -f "$TOOLKIT/package.json" ]; then
   echo "[okf] descargando toolkit quartz-okf (${TOOLKIT_REF:0:7})..."

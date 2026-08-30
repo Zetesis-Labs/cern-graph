@@ -1,6 +1,7 @@
 ---
 title: "Security governance"
 type: topic
+visibility: open
 entorno: corporate
 tags: [security]
 description: "Hub: the rules, the enforcers and the audit that reshaped them."

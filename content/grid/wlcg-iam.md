@@ -1,6 +1,7 @@
 ---
 title: "WLCG IAM"
 type: service
+visibility: open
 entorno: scientific-grid
 status: current
 tags: [grid, identity]

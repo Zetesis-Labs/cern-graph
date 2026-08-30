@@ -1,6 +1,7 @@
 ---
 title: "Identity architecture"
 type: topic
+visibility: open
 entorno: corporate
 tags: [identity]
 description: "Hub: authentication and authorization for the CERN campus."

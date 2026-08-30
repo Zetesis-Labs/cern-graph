@@ -1,6 +1,7 @@
 ---
 title: "Data privacy"
 type: topic
+visibility: open
 entorno: corporate
 tags: [privacy, governance]
 description: "Hub: the other regulatory framework governing CERN's systems."

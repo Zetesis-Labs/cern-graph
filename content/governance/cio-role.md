@@ -1,6 +1,7 @@
 ---
 title: "The CIO role"
 type: role
+visibility: open
 entorno: corporate
 status: current
 tags: [governance]

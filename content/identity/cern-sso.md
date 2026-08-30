@@ -1,6 +1,7 @@
 ---
 title: "CERN SSO"
 type: service
+visibility: open
 entorno: corporate
 status: current
 tags: [identity]

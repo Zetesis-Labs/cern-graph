@@ -1,6 +1,7 @@
 ---
 title: "Storage and data"
 type: topic
+visibility: open
 entorno: cross-cutting
 tags: [storage]
 description: "Hub: where CERN's data rests and how it moves."

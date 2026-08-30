@@ -1,6 +1,7 @@
 ---
 title: "Compute platforms"
 type: topic
+visibility: open
 entorno: corporate
 tags: [compute]
 description: "Hub: the pooled compute the laboratory runs on."

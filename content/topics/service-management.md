@@ -1,6 +1,7 @@
 ---
 title: "Service management"
 type: topic
+visibility: open
 entorno: corporate
 tags: [itsm]
 description: "Hub: how CERN administers its own services — the ITIL layer over everything."

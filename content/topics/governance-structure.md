@@ -1,6 +1,7 @@
 ---
 title: "Governance structure"
 type: topic
+visibility: open
 entorno: corporate
 tags: [governance]
 description: "Hub: how CERN is governed, from the Council down to the IT department."

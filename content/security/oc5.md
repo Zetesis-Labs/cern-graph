@@ -1,6 +1,7 @@
 ---
 title: "OC5 — the Computing Rules"
 type: policy
+visibility: open
 entorno: corporate
 status: current
 tags: [security, policy]

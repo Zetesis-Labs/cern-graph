@@ -1,6 +1,7 @@
 ---
 title: "Grid federation (WLCG)"
 type: topic
+visibility: open
 entorno: scientific-grid
 tags: [grid, wlcg]
 description: "Hub: distributed authorization for the LHC computing grid."

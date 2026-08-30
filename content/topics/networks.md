@@ -1,6 +1,7 @@
 ---
 title: "Networks"
 type: topic
+visibility: open
 entorno: cross-cutting
 tags: [network]
 description: "Hub: campus, technical and federated connectivity across CERN and WLCG."

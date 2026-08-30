@@ -1,6 +1,7 @@
 ---
 title: "WLCG governance"
 type: topic
+visibility: open
 entorno: scientific-grid
 tags: [grid, governance]
 description: "Hub: the collaboration's own constitution, separate from CERN's."
