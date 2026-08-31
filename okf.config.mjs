@@ -133,3 +133,16 @@ export const federation = {
     },
   ],
 }
+
+// This corpus's half of the build; the recipe itself belongs to the toolkit.
+export const build = {
+  hooks: {
+    postBuild: [
+      // The IT notes used to live at the site root; Pages redirects the old paths.
+      'cp "$OKF_ROOT/okf/_redirects" "$OKF_PUBLIC/_redirects"',
+      'python3 "$OKF_ROOT/okf/inject-cern-logo.py"',
+    ],
+  },
+  // Floors that tell a whole site from a degraded one, not growth marks.
+  verify: { minNodes: 20, minEdges: 60, pages: [{ glob: "it-governance/**", min: 200 }] },
+}

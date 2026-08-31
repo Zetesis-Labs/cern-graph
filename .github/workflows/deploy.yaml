@@ -37,29 +37,9 @@ jobs:
           key: okf-${{ hashFiles('okf/quartz-okf.ref') }}
           restore-keys: okf-
 
-      - name: Build con quartz-okf
+      # El toolkit construye y verifica el sitio: los suelos están en okf.config.mjs.
+      - name: Build y verificación con quartz-okf
         run: bash okf/build-site.sh
-
-      - name: Comprobar que el build tiene contenido
-        run: |
-          test -f public/index.html || { echo "El build no generó public/index.html"; exit 1; }
-          for f in public/static/explorer.html public/static/okf-graph.json; do
-            test -s "$f" || { echo "falta el asset del grafo: $f"; exit 1; }
-          done
-          # Desde 004 el explorador es un componente: el widget y su configuración van en cada página.
-          grep -q 'class="okf-explorer' public/index.html || { echo "el componente del explorador no está en las páginas"; exit 1; }
-          grep -q 'data-cfg=' public/index.html || { echo "el explorador no lleva su configuración (data-cfg)"; exit 1; }
-          nodes=$(python3 -c "import json;print(len(json.load(open('public/static/okf-graph.json'))['nodes']))")
-          edges=$(python3 -c "import json;print(len(json.load(open('public/static/okf-graph.json'))['edges']))")
-          echo "grafo: $nodes nodos, $edges aristas"
-          test "$nodes" -ge 1 || { echo "el grafo salió vacío"; exit 1; }
-          # Sin aristas el sitio publica una lista de notas, no un grafo.
-          test "$edges" -ge 1 || { echo "el grafo no tiene aristas: revisa las secciones '# Topology'"; exit 1; }
-          # El explorador referencia sus scripts desde /static: si alguno no se emite,
-          # el lienzo queda en blanco y el fallo solo se ve abriendo el navegador.
-          for src in $(grep -oE '<script src="/static/[^"]+"' public/static/explorer.html | sed -E 's|.*/static/([^"]+)"|\1|'); do
-            test -s "public/static/$src" || { echo "el explorador referencia /static/$src y no se ha emitido"; exit 1; }
-          done
 
       # Un corpus que se apoya en fuentes primarias vive de que esos enlaces sigan
       # existiendo. home.cern reorganiza sus URLs cada cierto tiempo y los 404 son

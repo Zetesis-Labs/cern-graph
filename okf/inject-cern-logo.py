@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
 """Inserta el badge del logo del CERN al final del menú lateral izquierdo.
 
-Se ejecuta como paso post-build (ver okf/build-site.sh): recorre los HTML
+Se ejecuta como hook del seam `postBuild` de `okf build`: recorre los HTML
 generados en public/ y añade el enlace justo antes de que cierre
 `<div class="left sidebar">`, es decir, antes de `</div><div class="center"`.
 """
+import os
 import pathlib
 import sys
 
-PUBLIC = pathlib.Path(__file__).resolve().parent.parent / "public"
+PUBLIC = pathlib.Path(
+    sys.argv[1] if len(sys.argv) > 1 else os.environ.get("OKF_PUBLIC")
+    or pathlib.Path(__file__).resolve().parent.parent / "public"
+)
 MARKER = '</div><div class="center"'
 BADGE = (
     '<a class="cern-badge" href="https://home.cern" target="_blank" '
