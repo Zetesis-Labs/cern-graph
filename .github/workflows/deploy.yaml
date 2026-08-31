@@ -43,9 +43,12 @@ jobs:
       - name: Comprobar que el build tiene contenido
         run: |
           test -f public/index.html || { echo "El build no generó public/index.html"; exit 1; }
-          for f in public/static/explorer.html public/static/okf-graph.json public/static/okf-explorer-access.js; do
+          for f in public/static/explorer.html public/static/okf-graph.json; do
             test -s "$f" || { echo "falta el asset del grafo: $f"; exit 1; }
           done
+          # Desde 004 el explorador es un componente: el widget y su configuración van en cada página.
+          grep -q 'class="okf-explorer' public/index.html || { echo "el componente del explorador no está en las páginas"; exit 1; }
+          grep -q 'data-cfg=' public/index.html || { echo "el explorador no lleva su configuración (data-cfg)"; exit 1; }
           nodes=$(python3 -c "import json;print(len(json.load(open('public/static/okf-graph.json'))['nodes']))")
           edges=$(python3 -c "import json;print(len(json.load(open('public/static/okf-graph.json'))['edges']))")
           echo "grafo: $nodes nodos, $edges aristas"
