@@ -1,101 +1,41 @@
-# OKF Graph Template: IT Governance and Identity Architecture (CERN)
+# CERN · Knowledge Graph
 
-This repository is a **sample template and starting point (starter kit)** for building interactive navigable websites with structured knowledge graphs using the [**`quartz-okf`**](https://github.com/Zetesis-Labs/quartz-okf) engine.
+The graph of CERN as an organisation, built with the
+[`quartz-okf`](https://github.com/Zetesis-Labs/quartz-okf) toolkit: the Council and its
+committees, the Director-General, the sectors and departments — and, as **portals**, the
+domains large enough to be graphs of their own. One repository composes them all.
 
-The use case in this example breaks down **CERN's IT Governance, Identity Architecture (Keycloak/OIDC), Security (CIS v8/Zero Trust) and the WLCG IAM Grid**, demonstrating how to organize a complex technical domain into a navigable graph.
+The first portal is [IT governance & identity](https://cern.zetesis.xyz/it-governance/):
+a corpus of its own under `subgraphs/it-governance/`, with its own vocabulary, colours
+and view modes. Its notes marked `visibility: open` are previewed in the umbrella graph
+around the portal node; the whole corpus is mounted under `/it-governance/` and the
+explorer enters its graph in place.
 
----
+## Build
 
-## 📁 Repository Structure
+```bash
+./okf/build-site.sh        # downloads the toolkit pinned in okf/quartz-okf.ref, builds public/
+python3 serve.py           # serves public/ locally
+```
+
+The build mounts each subgraph declared in `okf.config.mjs` (`federation.subgraphs[]`)
+before Quartz runs: a corpus in this repository is named by `path`; a corpus that lives
+in a repository of its own would be named by `repo` + `ref`. Either way its notes become
+pages under `/<id>/` and its graph is republished same-origin, so the site is
+self-sufficient.
+
+Deploys to Cloudflare Pages on push to `main` (`.github/workflows/deploy.yaml`). The IT
+notes used to live at the site root; `okf/_redirects` sends their old paths to
+`/it-governance/…`.
+
+## Layout
 
 ```text
-cern-it-governance-graph/
-├── content/               # 📝 The corpus: atomic notes in Markdown
-│   ├── index.md           # Portal / entry point
-│   ├── topics/            # Topic hubs: one structure note per domain area
-│   ├── governance/        # Council, committees, sectors, the CIO
-│   ├── it-department/     # The IT department and its strategy
-│   ├── identity/          # SSO, Keycloak, OIDC, GMS, authorization
-│   ├── security/          # OC5, CIS v8, the security bodies
-│   ├── privacy/           # OC11, data protection bodies, DPIA
-│   ├── grid/              # WLCG governance, IAM, tokens, trust frameworks
-│   ├── funding/           # C-RRB, CRSG, the Medium-Term Plan
-│   ├── infrastructure/    # Data centres and energy objectives
-│   ├── programmes/        # MALT, openlab, SCOAP3, CERN-OHL, QTI
-│   ├── open-science/      # Open science policy and the Invenio family
-│   └── sources/           # One note per primary source, with its URL
-├── okf.config.mjs         # ⚙️ Domain definition: node types, relationships and colors
-├── quartz.config.yaml     # 🎨 Neutral configuration for the Quartz engine
-├── quartz/
-│   ├── styles/            # 💅 Custom SCSS styles (optional)
-│   └── static/            # 📦 Assets served verbatim (D3, required by the explorer)
-└── okf/
-    ├── quartz-okf.ref     # 📌 Pinned commit SHA of the quartz-okf toolkit
-    └── build-site.sh      # 🚀 Static website build script
+content/                    the umbrella corpus: cern.md, governance/, units/, topics/ (portals), sources/
+okf.config.mjs              vocabulary, explorer modes and the `federation` block
+subgraphs/it-governance/    the IT governance corpus: its content/, okf.config.mjs and README
+okf/                        build script, quartz.ts, toolkit pin, _redirects
+quartz/                     styles and static assets (D3, logos)
 ```
 
----
-
-## 🚀 Quick Start
-
-### Prerequisites
-* **Node.js ≥ 22**
-* **Bash**, **curl** and **tar**
-
-### 1. Preview / Build the Site
-
-To generate the static site and the knowledge graph in `public/`:
-
-```bash
-chmod +x okf/build-site.sh
-./okf/build-site.sh
-```
-
-The script will:
-1. Automatically download the `quartz-okf` toolkit pinned by SHA (`okf/quartz-okf.ref`).
-2. Validate the notes and the model's consistency.
-3. Build the static site into the `public/` folder.
-
-To serve it locally:
-```bash
-npx serve public
-```
-
----
-
-## 💡 How to adapt this template to your own project
-
-1. **Replace or edit the notes in `content/`**:
-   * Write your notes in Markdown format.
-   * Add the node type in the header (YAML Frontmatter) (`type: your_type`):
-     ```markdown
-     ---
-     title: "My Entity"
-     type: service
-     ---
-     ```
-   * Declare the **typed relationships** in a `# Topology` section, with the label in bold followed by a colon. That is the only format the engine converts into graph edges; a lone wikilink in the prose is just a link:
-     ```markdown
-     # Topology
-
-     * **Governs**: [[destination-note]] — optional comment.
-     ```
-   * Labels must be one of those declared in `edgeLabels`. Inverse labels (`inverseLabels`) are derived by the engine on its own: they are not declared by hand.
-
-2. **Customize the domain in `okf.config.mjs`**:
-   * Define your own node types (`nodeTypes`), their colors for the graph viewer, and the typed relationships between them.
-
-3. **Rebuild**:
-   * Run `./okf/build-site.sh`.
-
----
-
-## 🚀 Deployment
-
-`.github/workflows/deploy.yaml` builds the site and publishes it to **Cloudflare Pages** on every push to `main`. It requires the `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` secrets in the repository.
-
----
-
-## 📜 License
-
-The sample content is published under the [MIT](LICENSE) license. The build engine uses [quartz-okf](https://github.com/Zetesis-Labs/quartz-okf) (MIT) and [Quartz](https://github.com/jackyzha0/quartz) (MIT).
+MIT.

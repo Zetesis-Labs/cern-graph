@@ -93,6 +93,8 @@ rm -rf "$CACHE/.quartz-cache"
 # 6. Salida a public/
 rm -rf "$REPO_ROOT/public"
 cp -R "$CACHE/public" "$REPO_ROOT/public"
+# Las notas de IT vivían en la raíz del sitio; Cloudflare Pages redirige las rutas antiguas.
+cp "$OKF_DIR/_redirects" "$REPO_ROOT/public/_redirects"
 
 # 7. Badge del CERN al final del menú lateral izquierdo (post-build)
 python3 "$OKF_DIR/inject-cern-logo.py"

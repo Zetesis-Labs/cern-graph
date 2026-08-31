@@ -1,25 +1,16 @@
 ---
 title: "CERN Council"
 type: committee
-entorno: corporate
-status: current
+description: "The highest authority of the organisation: one delegation per Member State, approving programme, budget and the appointment of the Director-General."
 tags: [governance]
-description: "The supreme governing organ: delegates of the 25 Member States."
 ---
 
-# CERN Council
-
-The Council is where authority begins: delegates of the **25 Member States**, responsible
-for all important decisions about the Organization — scientific programmes, budgets, and
-the approval of structures like [[sector-structure-2026]]. Every euro of data-centre
-hardware traces its authorization here.
-
----
+The Council is where the Member States decide. It approves the scientific programme and
+the budget, appoints the [[governance/director-general|Director-General]] and is advised
+by the [[governance/scientific-policy-committee|Scientific Policy Committee]] on science
+and by the Finance Committee on money.
 
 # Topology
 
-* **Part of**: [[governance-structure]]
-* **Governs**: [[sector-structure-2026]] — endorsed the 2026–2030 directorate structure at its March session.
-* **Funds**: [[medium-term-plan]] — approves the plan and its budget.
-* **Cites**: [[cern-convention]] — Articles IV–V establish the Council as supreme organ.
-* **Cites**: [[member-states]] — the current list of 25.
+* **Governs**: [[cern]]
+* **Cites**: [[sources/cern-governance]]
