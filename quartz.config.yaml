@@ -122,6 +122,9 @@ plugins:
     enabled: true
   - source: "./quartz-okf-explorer"
     enabled: true
+    layout:
+      position: right
+      priority: 15
   - source: ./quartz-okf-panels
     enabled: true
     layout:
