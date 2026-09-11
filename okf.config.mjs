@@ -141,6 +141,8 @@ export const build = {
       // The IT notes used to live at the site root; Pages redirects the old paths.
       'cp "$OKF_ROOT/okf/_redirects" "$OKF_PUBLIC/_redirects"',
       'python3 "$OKF_ROOT/okf/inject-cern-logo.py"',
+      // Only the root belongs in the index: the corpus drew searches for CERN internal services, not readers of the graph.
+      'python3 "$OKF_ROOT/okf/seo-root-only.py"',
     ],
   },
   // Floors that tell a whole site from a degraded one, not growth marks.
