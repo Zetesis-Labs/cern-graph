@@ -29,7 +29,7 @@ import re
 import sys
 
 ROBOTS_META = '<meta name="robots" content="noindex, follow"/>'
-FALLBACK_ORIGIN = "https://cern.zetesis.xyz"
+FALLBACK_ORIGIN = "https://cern.zetesis.es"
 NOINDEX_SINCE = "2026-09-11"
 
 

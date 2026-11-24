@@ -5,7 +5,7 @@ The graph of CERN as an organisation, built with the
 committees, the Director-General, the sectors and departments — and, as **portals**, the
 domains large enough to be graphs of their own. One repository composes them all.
 
-The first portal is [IT governance & identity](https://cern.zetesis.xyz/it-governance/):
+The first portal is [IT governance & identity](https://cern.zetesis.es/it-governance/):
 a corpus of its own under `subgraphs/it-governance/`, with its own vocabulary, colours
 and view modes. Its notes marked `visibility: open` are previewed in the umbrella graph
 around the portal node; the whole corpus is mounted under `/it-governance/` and the

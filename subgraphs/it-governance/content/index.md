@@ -59,6 +59,6 @@ Each note is atomic (one idea), typed (19 node types), and linked through a clos
 
 ---
 
-[![Zetesis — systems architecture, AI and complex problem solving](/static/zetesis-wordmark.svg)](https://zetesis.xyz)
+[![Zetesis — systems architecture, AI and complex problem solving](/static/zetesis-wordmark.svg)](https://zetesis.es)
 
-*A project by [Zetesis](https://zetesis.xyz) — systems architecture, AI and complex problem solving in production.*
+*A project by [Zetesis](https://zetesis.es) — systems architecture, AI and complex problem solving in production.*
